@@ -1,2 +1,5 @@
 jupyter
 rise
+numpy
+matplotlib
+pandas
