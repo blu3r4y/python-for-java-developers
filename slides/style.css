@@ -1,0 +1,57 @@
+/* make content smaller */
+:root {
+  --r-main-font-size: 20px;
+  --r-heading-margin: 10px 0 20px 0;
+}
+
+/* do not center text */
+.reveal .slides {
+  text-align: left;
+}
+
+/* image style */
+.reveal img {
+  display: block;
+  max-width: 50%;
+  margin-top: 0.5em;
+}
+
+img.center {
+  margin: 0.5em auto 0 auto;
+}
+
+/* softer box shadow for code */
+.reveal pre {
+  box-shadow: 0px 5px 15px rgb(0 0 0 / 5%);
+}
+
+/* side-by-side view with one or more columns */
+.sidebyside {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-evenly;
+  gap: 1em;
+}
+
+/* smaller font for code in side-by-side view */
+.sidebyside pre {
+  font-size: 60%;
+}
+
+/* nicer scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #a4a4a4;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #757575;
+}
