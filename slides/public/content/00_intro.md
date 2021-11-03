@@ -14,18 +14,18 @@ Find slides and code at 🌎 [github.com/blu3r4y/python-for-java-developers](htt
 
 ## Agenda
 
-- Intro
-- Installation
-- Syntax
-- Data Types
-- Collections
-- Input and Output
-- Examples, Examples, Examples
-- Functions
-- Classes
-- Code Organization
-- Libraries
-- Zen of Python
+- [What is Python?](#/what-is-python)
+- [Installation](#/installation)
+- [Syntax](#/syntax)
+- [Data Types](#/data-types)
+- [Collections](#/collections)
+- [Input and Output](#/input-and-output)
+- [Examples, Examples, Examples](#/examples)
+- [Functions](#/functions)
+- [Classes](#/classes)
+- [Code Organization](#/code-organization)
+- [Libraries](#/libraries)
+- [Zen of Python](#/zen-of-python)
 
 ---
 
@@ -48,40 +48,3 @@ Find slides and code at 🌎 [github.com/blu3r4y/python-for-java-developers](htt
 - [gto76.github.io/python-cheatsheet](https://gto76.github.io/python-cheatsheet)
 - [pythoncheatsheet.org](https://www.pythoncheatsheet.org)
 - [pythonsheets.com](https://www.pythonsheets.com/)
-
----
-
-## 💎 What is Python?
-
-- a mature, **general-purpose, object-oriented, dynamically-typed** programming language  
-  _(Java is statically-typed)_
-- released in 1991 _(Java was released in 1995)_
-- one of the dominating languages in machine learning, statistics, and data analytics
-- popular alternative to MATLAB or Octave
-- gaining in popularity year after year
-
-<img class="r-stretch" src="/images/python-popularity.png">
-
----
-
-<!-- .slide: data-background-iframe="https://www.tiobe.com/tiobe-index/" data-background-interactive -->
-
-## ... and #1 in the TIOBE Index as of October 2021
-<!-- .element: class="headline" -->
-
----
-
-## Comparison to Java
-
-### Similarities
-
-- general-purpose, object-oriented, garbage-collected, large standard library
-
-### Differences
-
-- **dynamically-typed**, and not strongly-typed  
-  _(type checks will only happen at runtime)_
-- **interpreted with [CPython](https://github.com/python/cpython)**, and not just-in-time compiled with a JVM  
-  _("more flexibility, but slower execution times")_
-- **interactive mode** provided out of the box  
-  _("i will show you that soon")_
