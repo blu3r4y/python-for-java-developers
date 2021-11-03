@@ -15,3 +15,9 @@ If you want to run this notebook locally, execute the following
 
     python -m pip install -r requirements.txt
     python -m notebook --notebook-dir .
+
+## Show the presentation locally
+
+    cd slides
+    npm install
+    npm run dev

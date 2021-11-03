@@ -66,7 +66,8 @@ Find slides and code at 🌎 [github.com/blu3r4y/python-for-java-developers](htt
 
 <!-- .slide: data-background-iframe="https://www.tiobe.com/tiobe-index/" data-background-interactive -->
 
-## <span style="background-color: #2196f3; color: white; padding: 0 5px; font-weight: bold;">... and #1 in the TIOBE Index as of October 2021</span>
+## ... and #1 in the TIOBE Index as of October 2021
+<!-- .element: class="headline" -->
 
 ---
 

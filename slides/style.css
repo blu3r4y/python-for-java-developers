@@ -9,6 +9,14 @@
   text-align: left;
 }
 
+/* headline style for interactive slides */
+.headline {
+  background-color: #2196f3;
+  color: white !important;
+  padding: 0 5px;
+  font-weight: bold !important;
+}
+
 /* image style */
 .reveal img {
   display: block;
@@ -23,6 +31,10 @@ img.center {
 /* softer box shadow for code */
 .reveal pre {
   box-shadow: 0px 5px 15px rgb(0 0 0 / 5%);
+}
+
+.reveal code {
+  color: #9c27b0;
 }
 
 /* side-by-side view with one or more columns */
