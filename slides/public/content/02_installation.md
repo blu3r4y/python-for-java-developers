@@ -1,10 +1,7 @@
-<!-- .slide: id="installation" data-background-color="#f0f4c3" -->
+<!-- .slide: id="installation" -->
 
 # 🐍 Installation
-
----
-
-## 🐍 Installation
+<!-- .element: class="headline" -->
 
 Go to [python.org](https://www.python.org/) and install the 64-bit version of Python 3.8 or newer.  
 

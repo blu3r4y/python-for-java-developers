@@ -1,10 +1,9 @@
 ## Python Crash Course for Java Developers
+<!-- .element: class="headline" -->
 
-- 🧑 Mario Kahlhofer 
-- 📧 [mario.kahlhofer@dynatrace.com](mailto:mario.kahlhofer@dynatrace.com)
-
-
-Find slides and code at 🌎 [github.com/blu3r4y/python-for-java-developers](https://github.com/blu3r4y/python-for-java-developers)
+🧑 Mario Kahlhofer  
+📧 [mario.kahlhofer@dynatrace.com](mailto:mario.kahlhofer@dynatrace.com)  
+🌎 [github.com/blu3r4y/python-for-java-developers](https://github.com/blu3r4y/python-for-java-developers)
 
 <img class="r-stretch" src="/images/python-xkcd.png" />
 

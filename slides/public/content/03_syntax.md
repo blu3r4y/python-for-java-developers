@@ -1,10 +1,7 @@
-<!-- .slide: id="syntax" data-background-color="#f0f4c3" -->
+<!-- .slide: id="syntax" -->
 
 # 🐍 Syntax
-
----
-
-## 🐍 Syntax
+<!-- .element: class="headline" -->
 
 <div class="sidebyside">
 

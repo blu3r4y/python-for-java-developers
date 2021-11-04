@@ -1,10 +1,7 @@
-<!-- .slide: id="what-is-python" data-background-color="#f0f4c3" -->
+<!-- .slide: id="what-is-python" -->
 
 # 🐍 What is Python?
-
----
-
-## 🐍 What is Python?
+<!-- .element: class="headline" -->
 
 ![](/images/python-logo.png) <!-- .element style="height: 5em; margin-bottom: -1em;" -->
 
