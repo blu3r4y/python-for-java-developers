@@ -55,7 +55,10 @@
   gap: 1em;
 }
 
-/* smaller font for code in side-by-side view */
+/* smaller font for code */
+.reveal pre {
+  font-size: 75%;
+}
 .reveal .sidebyside pre {
   font-size: 60%;
 }
