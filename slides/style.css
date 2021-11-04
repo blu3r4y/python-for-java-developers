@@ -10,11 +10,18 @@
 }
 
 /* headline style for interactive slides */
-.headline {
+.reveal .headline {
   background-color: #2196f3;
   color: white !important;
   padding: 0 5px;
   font-weight: bold !important;
+}
+
+/* code snippet link style */
+.reveal .snippet {
+  background-color: #f3e5f5;
+  padding: 10px;
+  font-weight: bold;
 }
 
 /* image style */
@@ -24,7 +31,7 @@
   margin-top: 0.5em;
 }
 
-img.center {
+.reveal img.center {
   margin: 0.5em auto 0 auto;
 }
 
@@ -33,12 +40,14 @@ img.center {
   box-shadow: 0px 5px 15px rgb(0 0 0 / 5%);
 }
 
-.reveal code {
+/* color inline code only */
+.reveal p code,
+.reveal li code {
   color: #9c27b0;
 }
 
 /* side-by-side view with one or more columns */
-.sidebyside {
+.reveal .sidebyside {
   display: flex;
   align-items: flex-start;
   align-content: flex-start;
@@ -47,7 +56,7 @@ img.center {
 }
 
 /* smaller font for code in side-by-side view */
-.sidebyside pre {
+.reveal .sidebyside pre {
   font-size: 60%;
 }
 
