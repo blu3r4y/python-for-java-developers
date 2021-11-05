@@ -26,7 +26,7 @@ class Passenger {
     }
 }
 
-public class PassengerProgram {
+public class PassengersProgram {
 
     public static void main(String[] args) throws Exception {
         Passenger lisa = new Passenger("Lisa", "Ha");
