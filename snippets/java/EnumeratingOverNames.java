@@ -1,6 +1,6 @@
 public class EnumeratingOverNames {
     public static void main(String[] args) throws Exception {
-        String[] names = {"Franz", "Susanne", "Hans", "Herbert", "Peter", "Max", "Lisa"};
+        String[] names = {"Lisa", "John", "Susan", "Alex"};
 
         int i = 0;
         while (i < names.length) {

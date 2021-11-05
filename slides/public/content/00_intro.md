@@ -19,7 +19,7 @@
 - [Data Types](#/data-types)
 - [Collections](#/collections)
 - [Input and Output](#/input-and-output)
-- [Examples, Examples, Examples](#/examples)
+- [Examples](#/examples)
 - [Functions](#/functions)
 - [Classes](#/classes)
 - [Code Organization](#/code-organization)

@@ -3,7 +3,6 @@ import java.util.*;
 public class SumOfAllDigits {
     public static void main(String[] args) throws Exception {
 
-        // int n = In.readInt();
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int n = Integer.parseInt(scanner.nextLine());
