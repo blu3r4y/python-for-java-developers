@@ -31,7 +31,7 @@ switch (x) {
 # ./python/basic_control_flow.py
 
 x = 0
-    
+
 if x == 0:
     print("The value is 0")
 elif x == 1:
@@ -83,7 +83,7 @@ digit_sum = 0
 while n > 0:
     digit_sum += n % 10
     n = n // 10
-    
+
 print("The digit sum is ", digit_sum)
 
 ```
@@ -327,7 +327,7 @@ gross = []
 for price in prices:
     if price > 8:
         gross.append(price * 1.2)
-        
+
 print(gross)
 
 ```

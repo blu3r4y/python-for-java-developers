@@ -1,4 +1,4 @@
-public class MathematicalFunctions {
+public class RectangleFunctions {
     public static void main(String[] args) throws Exception {
         System.out.println("rectangleArea(1, 5) = " + rectangleArea(1, 5));
         System.out.println("rectangleArea(1.5, 2.3) = " + rectangleArea(1.5, 2.3));
