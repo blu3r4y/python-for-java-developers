@@ -1,5 +1,5 @@
 public class IteratingOverNames {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         String[] names = {"Lisa", "John", "Susan", "Alex"};
 
         for (String name : names) {

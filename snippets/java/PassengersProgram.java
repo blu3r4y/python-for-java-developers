@@ -1,7 +1,7 @@
 import java.util.*;
 
 class Passenger {
-    
+
     final String firstName;
     final String lastName;
 
@@ -11,7 +11,7 @@ class Passenger {
     }
 
     void print() {
-        System.out.println(String.format("%s %s", firstName, lastName));
+        System.out.printf("%s %s %n", firstName, lastName);
     }
 
     static Passenger fromInput() {
@@ -28,7 +28,7 @@ class Passenger {
 
 public class PassengersProgram {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Passenger lisa = new Passenger("Lisa", "Ha");
         Passenger user = Passenger.fromInput();
 

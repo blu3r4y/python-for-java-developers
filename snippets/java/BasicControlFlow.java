@@ -1,5 +1,5 @@
 public class BasicControlFlow {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         int x = 0;
 
         switch (x) {

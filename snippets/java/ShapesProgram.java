@@ -1,5 +1,5 @@
 interface Shape {
-    public double area();
+    double area();
 }
 
 class Circle implements Shape {
@@ -32,7 +32,7 @@ class Square implements Shape {
 
 public class ShapesProgram {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Square square = new Square(10);
         Circle circle = new Circle(5);
 

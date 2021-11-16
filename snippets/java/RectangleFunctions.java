@@ -1,5 +1,5 @@
 public class RectangleFunctions {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         System.out.println("rectangleArea(1, 5) = " + rectangleArea(1, 5));
         System.out.println("rectangleArea(1.5, 2.3) = " + rectangleArea(1.5, 2.3));
 

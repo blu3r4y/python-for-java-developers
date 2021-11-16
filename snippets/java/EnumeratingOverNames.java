@@ -1,5 +1,5 @@
 public class EnumeratingOverNames {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         String[] names = {"Lisa", "John", "Susan", "Alex"};
 
         int i = 0;
