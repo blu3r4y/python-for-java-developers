@@ -1,5 +1,6 @@
+jupyter
 jupyterlab
-matplotlib
 requests
-pandas
 numpy
+pandas
+matplotlib

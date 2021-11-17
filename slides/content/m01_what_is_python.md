@@ -8,11 +8,11 @@
 Python is a **mature, general-purpose, object-oriented, dynamically-typed** programming language.
 
 - released in 1991, four years before Java
-- one of the dominating languages in Machine Learning, Statistics, and Data Analytics
+- dominant in machine learning, statistics, and data analytics
 - popular alternative to MATLAB or Octave
 - gaining in popularity year after year
 
-<img class="r-stretch" src="images/python-popularity.png">
+ ![](images/python-popularity.png) <!-- .element style="height: 15em;" -->
 
 ---
 
