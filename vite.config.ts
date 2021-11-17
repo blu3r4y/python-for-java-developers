@@ -1,5 +1,7 @@
 export default {
-    plugins: [watch_markdown_files()]
+    plugins: [watch_markdown_files()],
+    root: './web',
+    publicDir: '../slides' // this is relative to 'root'
 }
 
 function watch_markdown_files() {
