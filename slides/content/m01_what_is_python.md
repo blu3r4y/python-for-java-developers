@@ -16,13 +16,6 @@ Python is a **mature, general-purpose, object-oriented, dynamically-typed** prog
 
 ---
 
-<!-- .slide: data-background-iframe="https://www.tiobe.com/tiobe-index/" data-background-interactive -->
-
-## ... and #1 in the TIOBE Index as of October 2021
-<!-- .element: class="headline" -->
-
----
-
 ## Comparison to Java
 
 ### Similarities
