@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "If you are a Java developer and want to get a quick glance at Python, this course is for you",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open",
     "build": "vite build",
-    "serve": "vite preview",
+    "serve": "vite preview --open",
     "embed": "embedme ./public/content/*.md --source-root ../snippets/"
   },
   "repository": {
