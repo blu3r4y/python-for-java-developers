@@ -15,7 +15,7 @@
 
 - [What is Python?](#/what-is-python)
 - [Installation](#/installation)
-- [Syntax](#/syntax)
+- [Syntax Primer](#/syntax-primer)
 - [Data Types](#/data-types)
 - [Collections](#/collections)
 - [Input and Output](#/input-and-output)

@@ -1,6 +1,6 @@
-<!-- .slide: id="syntax" -->
+<!-- .slide: id="syntax-primer" -->
 
-# 🐍 Syntax
+# 🐍 Syntax Primer
 <!-- .element: class="headline" -->
 
 <div class="sidebyside">
@@ -28,7 +28,6 @@ numbers = [1, -10, 0, -5, -1000, 100, 7]
 
 maximum = numbers[0]
 
-# let's find the maximum
 for number in numbers:
     if number > maximum:
         maximum = number
@@ -43,8 +42,9 @@ print("The maximum value is", maximum)
 
 - There are no semicolons `;`
 - There are no types
-- There are no braces `{ }` - but blocks that are started by a colon `:`
+- There are no braces `{ }` ... but blocks that are started by a colon `:`
 - There are no parentheses `( )` around the expressions
-- A list - one of many built-in data collections in Python - is initialized with square brackets `[ ]` (actually, there are no arrays in Python)
+- A list - one of many [built-in types](https://docs.python.org/3/library/stdtypes.html) in Python - is initialized with square brackets `[ ]`  
+  ... actually, there are no arrays in Python
 - The `for` and `if` syntax is slightly different
-- Comments are written with the hashtag `#` symbol
+- Comments are written with the hashtag symbol `#`
