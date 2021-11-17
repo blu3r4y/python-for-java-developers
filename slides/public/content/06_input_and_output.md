@@ -5,7 +5,7 @@
 
 You output something with `print()` and you can read input with `input()`
 
-```py [|3-7|9-12|14-15]
+```py [|3-7|9-12|14-15|]
 # ./python/output.py
 
 pi = 3.141

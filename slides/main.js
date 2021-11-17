@@ -16,6 +16,9 @@ deck.initialize({
   height: 720,
   center: false,
   hash: true,
+  slideNumber: true,
+  showSlideNumber: 'print',
+  pdfSeparateFragments: false,
   markdown: {
     smartypants: true
   }

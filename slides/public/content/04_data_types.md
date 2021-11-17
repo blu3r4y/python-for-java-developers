@@ -34,7 +34,7 @@ input_bitmask = 0b1011_1001
 Furthermore, integers do have arbitrary precision. And you can still do math with them.  
 And you can use a `_` sign as a thousand separator if you wish.
 
-```py [|3-8|10-14]
+```py [|3-8|10-14|]
 # ./python/arbitrary_precision_integers.py
 
 lightyear_to_meter = 9_460_730_472_580_800
@@ -58,7 +58,7 @@ print("The star Proxima Centauri is", distance_to_proxima_centauri, "meters away
 
 This is just a brief teaser. We will do some more later on.
 
-```py [|3-4|6-8|10-12|14-17|19-20]
+```py [|3-4|6-8|10-12|14-17|19-20|]
 # ./python/mathematical_expressions.py
 
 x = 10.5
@@ -84,7 +84,7 @@ print("x ** 3 =", x ** 3)                # exponentiation (alternative)
 
 ### Mathematical Functions
 
-```py [|3-4|6|8|10|12]
+```py [|3-4|6|8|10|12|]
 # ./python/mathematical_functions.py
 
 # let's load our first package that holds a lot of mathematical functions
@@ -130,7 +130,7 @@ nay = False
 
 ### Boolean Expressions
 
-```py [|3-8|10-21]
+```py [|3-8|10-21|]
 # ./python/boolean_expressions.py
 
 x = True
