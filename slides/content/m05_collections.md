@@ -3,162 +3,217 @@
 # 🐍 Collections
 <!-- .element: class="headline" -->
 
-What **lists and arrays** are in Java, are just **lists** in Python.  
-What **maps** are in Java, are **dictionaries** in Python.  
-And yes, **sets** are called the same in Python and Java.
+We will only look into a few collection types of Python.  
+Find them all at [docs.python.org/3/library/stdtypes.html](https://docs.python.org/3/library/stdtypes.html)
+
+- **Lists and arrays** in Java ➡ are just `list` in Python (but, there is also `tuple`)
+- **Maps** in Java ➡ are `dict` in Python
+- **Sets** in Java ➡ are also `set` in Python
 
 ---
 
-## `list`
+## Lists 1/2
 
 Lists hold multiple elements in a specific order.
 
-```py
+```py [|3-5|8-9|11|13-14|16-17|]
+# ./python/m05_list_operations.py#L1-L15
+
 numbers = [1, 2, 3, 4, 5]
-names = ["Max", "Alex", "Anton"]
+names = ["Janine", "Ali", "Alice"]
 mixed = [1, 2, "Max", 3.141]
-```
 
-### Basic list operations
 
-```py
-# get element at position
-names[0]
+names[0]                # get element by index
+names[0] = "Peter"      # set element at index
 
-# use negative indexes to count from the end
-names[-1]
+names[-1]               # use negative indexes to count from the end
 
-# set element at position
-names[0] = "Peter"
+names.append(-5)        # add element to the end of the list
+names.insert(1, "Bob")  # add element at specific index
 
-# add an element to the end of the list
-names.append(-5)
-
-# add at a specific position
-numbers.insert(1, 100)
-
-# remove the first occurrence from the list
-names.remove(-5)
-
-# remove by index
-del names[0]
+names.remove(-5)        # remove the first occurrence from the list
+del names[0]            # remove by index
 ```
 
 ---
 
-### Check for existence of list elements
+## Lists 2/2: More list operations
 
-```py
-# check for existence
-"Alex" in names
+```py [|3-4|6-7|9-10|]
+# ./python/m05_list_operations.py#L18-L26
 
-# ... and not-existence
-"Mario" not in names
-```
+"Alice" in names        # check for existence
+"Mario" not in names    # ... and non-existence
 
-### Merge, count, and check the length of lists
+numbers.count(1)        # the number of times this item is in the list
+len(numbers)            # total number of elements in the list
 
-```py
-# merging two lists
+# merge two lists into one
 merged = [1, 2, 3] + [4, 5, 6]
 
-# the number of times this item is in the list
-numbers.count(1)
-
-# total number of elements in the list
-len(numbers)
 ```
 
-### More list operations
+<br />
 
-Learn about all list operations at [docs.python.org/3/tutorial/datastructures.html#more-on-lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+Learn about all list operations at [docs.python.org/3/tutorial/datastructures.html#more-on-lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists).
 
 ---
 
-## `dict`
+## Tuples 1/2
+
+Tuples hold two or more objects together in an efficient manner. They have NO direct equivalent in Java.
+Use them to group together small number of elements, e.g., when returning multiple values from a method.
+
+```py
+pair = ("Jonas", 12)  # create a tuple
+pair[0]               # get element by index, similar to lists
+```
+
+**Tuples are always immutable!**  
+You can NOT modify, append, or delete anything from them after you created one.
+
+```py
+#  pair[1] = 13
+# 💥 TypeError: 'tuple' object does not support item assignment
+
+#  pair.append(123)
+# 💥 AttributeError: 'tuple' object has no attribute 'append'
+```
+
+However, you can convert tuples to lists.
+
+```py
+numbers = (10, 11, 12)
+list(numbers)
+
+# and back again ...
+letters = ["A", "B", "C"]
+tuple(letters)
+```
+
+---
+
+## Tuples 2/2: Collection Destructuring
+
+**Destructuring** helps you to quickly retrieve elements from list-like types in Python.
+
+```py [|3-6|9-14|17-22|]
+# ./python/m05_destructuring.py
+
+x, y = 1, 2
+print(x, y)
+
+# > 1 2
+
+
+numbers = [1, 2, 3]
+x, y, z = numbers
+
+print(x, y, z)
+
+# > 1 2 3
+
+
+pair = ("Jonas", 12)
+name, age = pair
+
+print(name, age)
+
+# > Jonas 12
+
+```
+
+Actually, whenever you use a comma `,` in such contexts, a `tuple` is used implicitly.
+
+---
+
+## Dictionaries
 
 Dictionaries map keys to values.
 
-```py
-my_grades = {
+```py [|3-10|13-15|17-19|21-22|]
+# ./python/m05_dict_operations.py
+
+grades = {
     "math": 2,
     "programming": 1,
     "literature": 3
 }
 
 # alternative syntax
-my_grades = dict(math=2, programming=1, literature=3)
-```
+grades = dict(math=2, programming=1, literature=3)
 
-### Basic dict operations
 
-```py
-# get elements by key
-my_grades["math"]
-
-# set elements by key
-my_grades["math"] = 5
-
-# add a new element
-my_grades["electronics"] = 4
+grades["math"]             # get elements by key
+grades["math"] = 5         # set elements by key
+grades["electronics"] = 4  # add a new element
 
 # remove an element (will raise an error if the key does not exist)
-if "math" in my_grades:
-    del my_grades["math"]
+if "math" in grades:
+    del grades["math"]
+
+grades.keys()              # get all the keys as a list
+grades.values()            # get all the values as a list
+
 ```
 
 ---
 
-### Inspect dict elements
-
-```py
-# get all the keys as a list
-my_grades.keys()
-
-# get all the values as a list
-my_grades.values()
-```
-
----
-
-## `set`
+## Sets 1/2
 
 Sets hold multiple elements, without duplicates, but also without order.
 
-### Basic set operations
+```py [|3|5-6|8|10-12|]
+# ./python/m05_set_operations.py#L1-L10
 
-```py
-# notice how the '1' is only appended once after all
-my_set = {1, 2, 3, 5}
+numbers = {1, 1, 2, 3, 5}  # notice how the '1' is only appended once after all
 
-# check for existence (much faster than with lists)
-1 in my_set
+numbers.add(7)             # add new elements
+numbers.add(1)             # add elements that already exist (no effect)
 
-# add elements
-my_set.add(7)
+1 in numbers               # check for existence (much faster than with lists)
 
 # remove elements (will raise an error if the element does not exist)
-if 2 in my_set:
-    my_set.remove(2)
-my_set
+if 2 in numbers:
+    numbers.remove(2)
 ```
 
-### Retrieve elements from sets
+**You can NOT retrieve elements by index from a set!**
 
 ```py
-# you can NOT retrieve elements by index from a set
-my_set[0]
-
-# ... you could convert it to a list with `list(my_set)` or even better: use an iterator
+#  numbers[0]
+# 💥 TypeError: 'set' object is not subscriptable
 ```
 
-### Set arithmetic
+You must iterate over them or convert the set to a list with `list(elements)`
 
 ```py
+# ./python/m05_set_operations.py#L12-L14
+
+# iterate over set elements
+for val in numbers:
+    print(val)
+```
+
+---
+
+## Sets 2/2: Set Arithmetic
+
+Sets are handy when you want to apply operations from set theory.
+
+```py
+# ./python/m05_set_arithmetic.py
+
 a = {1, 2, 3, 4, 5}
 b = {4, 5, 6, 7, 8}
 
 print("a | b =", a | b)  # union
 print("a & b =", a & b)  # intersection
 print("a - b =", a - b)  # difference
+
+# > a | b = {1, 2, 3, 4, 5, 6, 7, 8}
+# > a & b = {4, 5}
+# > a - b = {1, 2, 3}
+
 ```
