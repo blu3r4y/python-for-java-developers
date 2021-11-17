@@ -6,9 +6,9 @@
 <div class="sidebyside">
 
 ```java
-// ./java/RectangleFunctions.java#L2-L16
+// ./java/M08_RectangleFunctions.java#L2-L16
 
-public static void main(String[] args) throws Exception {
+public static void main(String[] args) {
     System.out.println("rectangleArea(1, 5) = " + rectangleArea(1, 5));
     System.out.println("rectangleArea(1.5, 2.3) = " + rectangleArea(1.5, 2.3));
 
@@ -26,7 +26,7 @@ static boolean isSquare(double a, double b) {
 ```
 
 ```py
-# ./python/rectangle_functions.py
+# ./python/m08_rectangle_functions.py
 
 def rectangleArea(a, b):
     return a * b

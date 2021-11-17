@@ -6,7 +6,7 @@
 <div class="sidebyside">
 
 ```java
-// ./java/MaximumValue.java#L5-L15
+// ./java/M03_MaximumValue.java#L5-L15
 
 List<Integer> numbers = Arrays.asList(1, -10, 0, -5, -1000, 100, 7);
 
@@ -22,7 +22,7 @@ System.out.println("The maximum value is " + maximum);
 ```
 
 ```py
-# ./python/maximum_value.py
+# ./python/m03_maximum_value.py
 
 numbers = [1, -10, 0, -5, -1000, 100, 7]
 

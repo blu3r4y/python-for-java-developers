@@ -49,7 +49,6 @@ del names[0]
 ### Check for existence of list elements
 
 ```py
-
 # check for existence
 "Alex" in names
 

@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class SumOfAllDigits {
+class SumOfAllDigits {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

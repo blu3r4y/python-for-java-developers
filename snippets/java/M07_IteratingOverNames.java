@@ -1,4 +1,4 @@
-public class IteratingOverNames {
+class IteratingOverNames {
     public static void main(String[] args) {
         String[] names = {"Lisa", "John", "Susan", "Alex"};
 

@@ -7,10 +7,10 @@ Speaking of structuring your code, let's take a quick look at how one would crea
 
 ### Running Python Scripts
 
-Have a look at the folder `snippets/python/multiple_scripts` with your favorite IDE.
+Have a look at the folder `snippets/python/m10_multiple_scripts` with your favorite IDE.
 
 ### Packages and Modules
 
-Have a look at the folder `snippets/python/demo_project` with your favorite IDE.
+Have a look at the folder `snippets/python/m10_demo_project` with your favorite IDE.
 
 If you ever want to learn more, search for some best practices, e.g. here: https://docs.python-guide.org/writing/structure/

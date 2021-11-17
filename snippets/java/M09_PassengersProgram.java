@@ -26,7 +26,7 @@ class Passenger {
     }
 }
 
-public class PassengersProgram {
+class PassengersProgram {
 
     public static void main(String[] args) {
         Passenger lisa = new Passenger("Lisa", "Ha");

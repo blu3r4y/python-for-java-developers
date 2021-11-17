@@ -8,7 +8,7 @@
 <div class="sidebyside">
 
 ```java
-// ./java/BasicControlFlow.java#L3-L17
+// ./java/M07_BasicControlFlow.java#L3-L17
 
 int x = 0;
 
@@ -28,7 +28,7 @@ switch (x) {
 ```
 
 ```py
-# ./python/basic_control_flow.py
+# ./python/m07_basic_control_flow.py
 
 x = 0
 
@@ -56,25 +56,25 @@ else:
 <div class="sidebyside">
 
 ```java
-// ./java/SumOfAllDigits.java#L6-L18
+// ./java/M07_SumOfAllDigits.java#L6-L18
 
 Scanner scanner = new Scanner(System.in);
 System.out.print("Enter a number: ");
 int n = Integer.parseInt(scanner.nextLine());
 scanner.close();
 
-int digit_sum = 0;
+int digitSum = 0;
 
 while (n > 0) {
-    digit_sum += n % 10;
+    digitSum += n % 10;
     n = n / 10;
 }
 
-System.out.println("The digit sum is " + digit_sum);
+System.out.println("The digit sum is " + digitSum);
 ```
 
 ```py
-# ./python/sum_of_all_digits.py
+# ./python/m07_sum_of_all_digits.py
 
 n = int(input('Enter a number: '))
 
@@ -111,7 +111,7 @@ print("The digit sum is ", digit_sum)
 <div class="sidebyside">
 
 ```java
-// ./java/IteratingOverNames.java#L3-L7
+// ./java/M07_IteratingOverNames.java#L3-L7
 
 String[] names = {"Lisa", "John", "Susan", "Alex"};
 
@@ -121,7 +121,7 @@ for (String name : names) {
 ```
 
 ```py
-# ./python/iterating_over_names.py
+# ./python/m07_iterating_over_names.py
 
 names = ["Lisa", "John", "Susan", "Alex"]
 
@@ -139,7 +139,7 @@ for name in names:
 <div class="sidebyside">
 
 ```java
-// ./java/FunWithLists.java#L3-L7
+// ./java/M07_FunWithLists.java#L3-L7
 
 int[] numbers = {10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
 
@@ -149,7 +149,7 @@ for (int i = 5; i < 8; i++) {
 ```
 
 ```py
-# ./python/fun_with_lists.py
+# ./python/m07_fun_with_lists.py
 
 numbers = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 
@@ -262,7 +262,7 @@ sorted(numbers, reverse=True)
 <div class="sidebyside">
 
 ```java
-// ./java/EnumeratingOverNames.java#L3-L9
+// ./java/M07_EnumeratingOverNames.java#L3-L9
 
 String[] names = {"Lisa", "John", "Susan", "Alex"};
 
@@ -274,7 +274,7 @@ while (i < names.length) {
 ```
 
 ```py
-# ./python/enumerating_over_names.py
+# ./python/m07_enumerating_over_names.py
 
 names = ["Lisa", "John", "Susan", "Alex"]
 
@@ -302,7 +302,7 @@ List comprehensions work by mapping each value in a list to a new value and thus
 <div class="sidebyside">
 
 ```java
-// ./java/PriceTax.java#L5-L16
+// ./java/M07_PriceTax.java#L5-L16
 
 List<Double> prices = Arrays.asList(12.3, 5.2, 8.7, 1.2, 8.0);
 List<Double> gross = new ArrayList<Double>();
@@ -319,7 +319,7 @@ for (double price : gross) {
 ```
 
 ```py
-# ./python/price_tax.py
+# ./python/m07_price_tax.py
 
 prices = [12.3, 5.2, 8.7, 1.2, 8.0]
 gross = []

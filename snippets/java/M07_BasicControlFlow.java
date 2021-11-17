@@ -1,4 +1,4 @@
-public class BasicControlFlow {
+class BasicControlFlow {
     public static void main(String[] args) {
         int x = 0;
 

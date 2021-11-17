@@ -9,10 +9,10 @@ Let's have a look.
 <div class="sidebyside">
 
 ```java
-// ./java/PassengersProgram.java#L3-L38
+// ./java/M09_PassengersProgram.java#L3-L38
 
 class Passenger {
-    
+
     final String firstName;
     final String lastName;
 
@@ -22,7 +22,7 @@ class Passenger {
     }
 
     void print() {
-        System.out.println(String.format("%s %s", firstName, lastName));
+        System.out.printf("%s %s %n", firstName, lastName);
     }
 
     static Passenger fromInput() {
@@ -37,9 +37,9 @@ class Passenger {
     }
 }
 
-public class PassengersProgram {
+class PassengersProgram {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Passenger lisa = new Passenger("Lisa", "Ha");
         Passenger user = Passenger.fromInput();
 
@@ -50,7 +50,7 @@ public class PassengersProgram {
 ```
 
 ```py
-# ./python/passengers_program.py
+# ./python/m09_passengers_program.py
 
 class Passenger:
     def __init__(self, first_name, last_name):
@@ -101,10 +101,10 @@ What you might know from interfaces in Java can be achieved a little bit differe
 <div class="sidebyside">
 
 ```java
-// ./java/ShapesProgram.java
+// ./java/M09_ShapesProgram.java
 
 interface Shape {
-    public double area();
+    double area();
 }
 
 class Circle implements Shape {
@@ -135,9 +135,9 @@ class Square implements Shape {
     }
 }
 
-public class ShapesProgram {
+class ShapesProgram {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Square square = new Square(10);
         Circle circle = new Circle(5);
 
@@ -151,7 +151,7 @@ public class ShapesProgram {
 ```
 
 ```py
-# ./python/shapes_program.py
+# ./python/m09_shapes_program.py
 
 class Circle:
     def __init__(self, radius):

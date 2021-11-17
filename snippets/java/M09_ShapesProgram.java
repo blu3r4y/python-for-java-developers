@@ -30,7 +30,7 @@ class Square implements Shape {
     }
 }
 
-public class ShapesProgram {
+class ShapesProgram {
 
     public static void main(String[] args) {
         Square square = new Square(10);

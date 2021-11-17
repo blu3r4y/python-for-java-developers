@@ -54,5 +54,5 @@ python -m jupyter lab [--notebook-dir <path>]
 
 Try it out!
 
-📜 `snippets/python/jupyter_introduction.ipynb`
+📜 `snippets/python/m02_jupyter_introduction.ipynb`
 <!-- .element: class="snippet" -->

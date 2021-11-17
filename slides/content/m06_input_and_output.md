@@ -6,7 +6,7 @@
 You output something with `print()` and you can read input with `input()`
 
 ```py [|3-7|9-12|14-15|]
-# ./python/output.py
+# ./python/m06_output.py
 
 pi = 3.141
 
@@ -31,7 +31,7 @@ print(f"The value of pi is {pi} and the value of tau is {2 * pi}")
 See also [gto76.github.io/python-cheatsheet/#format](https://gto76.github.io/python-cheatsheet/#format)
 
 ```py
-# ./python/output_numbers.py
+# ./python/m06_output_numbers.py
 
 pi = 3.14159265359
 ratio = 0.25
@@ -53,7 +53,7 @@ print(f"{ratio:.1%}")  # percentage
 ## Input
 
 ```py
-# ./python/input.py
+# ./python/m06_input.py
 
 name = input("Please enter your name: ")
 print("Your name is", name)

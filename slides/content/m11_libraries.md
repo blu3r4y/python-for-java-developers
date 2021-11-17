@@ -27,7 +27,7 @@ Here are some recommendations:
 ## Demo of `numpy` and `pandas`
 
 ```py
-# ./python/numpy_demo.py
+# ./python/m11_numpy_demo.py
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -45,7 +45,7 @@ plt.show()
 ```
 
 ```py
-# ./python/pandas_demo.py
+# ./python/m11_pandas_demo.py
 
 import pandas as pd
 
