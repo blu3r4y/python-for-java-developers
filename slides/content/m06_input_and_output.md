@@ -3,10 +3,40 @@
 # 🐍 Input and Output
 <!-- .element: class="headline" -->
 
-You output something with `print()` and you can read input with `input()`
+## Input
 
-```py [|3-7|9-12|14-15|]
-# ./python/m06_output.py
+You can read input from the command line with `input()`
+
+```py
+# ./python/m06_input.py#L1-L2
+
+name = input("Please enter your name: ")
+print("Your name is", name)
+```
+
+Don't forget data type conversions ...
+
+```py
+# ./python/m06_input.py#L4-L11
+
+# this function will always give you a string
+number = input("Please enter a number: ")
+
+as_int = int(number)
+as_float = float(number)
+
+print(as_int, as_float)
+
+```
+
+---
+
+## Output 1/2
+
+You output something to the command line with `print()`
+
+```py
+# ./python/m06_output.py#L1-L14
 
 pi = 3.141
 
@@ -14,57 +44,51 @@ print(pi)
 print()
 print("The value of pi is", pi)
 
-print("I ", end="")
-print("hate ", end="")
-print("line ", end="")
-print("breaks ", end="")
+# > 3.141
+# >
+# > The value of pi is 3.141
 
-# this is a so-called format string
+print("I hate: ", end="")
+print("line breaks")
+
+# > I hate: line breaks
+```
+
+Among many alternatives, [format strings](https://docs.python.org/3/library/string.html#string-formatting) are the recommended way to format output.
+
+```py
+# ./python/m06_output.py#L17-L19
+
 print(f"The value of pi is {pi} and the value of tau is {2 * pi}")
 
+# > The value of pi is 3.141 and the value of tau is 6.282
 ```
 
 ---
 
-## Number Formatting
+## Output 2/2: Number Formatting
 
-See also [gto76.github.io/python-cheatsheet/#format](https://gto76.github.io/python-cheatsheet/#format)
+Look them up when you need it at [gto76.github.io/python-cheatsheet/#format](https://gto76.github.io/python-cheatsheet/#format)
 
 ```py
-# ./python/m06_output_numbers.py
+# ./python/m06_number_formatting.py
 
 pi = 3.14159265359
-ratio = 0.25
-
 print(pi)
 
-print()
+# > 3.14159265359
 
 print(f"{pi:.0f}")     # no decimal places
 print(f"{pi:.2f}")     # two decimal places
 print(f"{pi:.3e}")     # scientific notation
 
+# > 3
+# > 3.14
+# > 3.142e+00
+
+ratio = 0.25
 print(f"{ratio:.1%}")  # percentage
 
-```
-
----
-
-## Input
-
-```py
-# ./python/m06_input.py
-
-name = input("Please enter your name: ")
-print("Your name is", name)
-
-# this function will always give you a string
-text = input("Please enter a number: ")
-
-# you need to convert the types
-as_int = int(text)
-as_float = float(text)
-
-print(as_int, as_float)
+# > 25.0%
 
 ```
