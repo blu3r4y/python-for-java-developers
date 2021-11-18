@@ -41,6 +41,7 @@
 - "How can I achieve X?" ... [docs.python.org/3/faq/programming.html](https://docs.python.org/3/faq/programming.html)
 - "Why is Y different in Python?" ... [docs.python.org/3/faq/design.html](https://docs.python.org/3/faq/design.html)
 - "What does the standard library offer?" ... [docs.python.org/3/library](https://docs.python.org/3/library)
+- "What does term X mean?" ... [docs.python.org/3/glossary.html](https://docs.python.org/3/glossary.html)
 
 ### Cheat Sheets
 

@@ -54,7 +54,7 @@ print("line breaks")
 # > I hate: line breaks
 ```
 
-Among many alternatives, [format strings](https://docs.python.org/3/library/string.html#string-formatting) are the recommended way to format output.
+Among many alternatives, [**format strings**](https://docs.python.org/3/library/string.html#string-formatting) are the recommended way to format output.
 
 ```py
 # ./python/m06_output.py#L17-L19
