@@ -5,7 +5,7 @@ class SumOfAllDigits {
 
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
-        int n = Integer.parseInt(scanner.nextLine());
+        int n = scanner.nextInt();
         scanner.close();
 
         int digitSum = 0;

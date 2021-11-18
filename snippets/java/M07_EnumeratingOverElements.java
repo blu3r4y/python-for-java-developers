@@ -1,4 +1,4 @@
-class EnumeratingOverNames {
+class EnumeratingOverElements {
     public static void main(String[] args) {
         String[] names = {"Lisa", "John", "Susan", "Alex"};
 

@@ -1,4 +1,4 @@
-class IteratingOverNames {
+class IteratingElementsByValue {
     public static void main(String[] args) {
         String[] names = {"Lisa", "John", "Susan", "Alex"};
 

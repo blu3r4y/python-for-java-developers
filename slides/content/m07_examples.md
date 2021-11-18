@@ -3,7 +3,7 @@
 # 🐍 Examples
 <!-- .element: class="headline" -->
 
-## Basic control flow
+## Basic Control Flow
 
 <div class="sidebyside">
 
@@ -47,11 +47,11 @@ else:
 
 ### What do we notice here?
 
-- Python has no `switch` expression, you have to make a cascade of `if`, `elif` and `else` statements
+- Python has no `switch` expression, you have to make a cascade of `if` / `elif` / `else` statements
 
 ---
 
-## Sum of all digits
+## Sum of all Digits
 
 <div class="sidebyside">
 
@@ -60,7 +60,7 @@ else:
 
 Scanner scanner = new Scanner(System.in);
 System.out.print("Enter a number: ");
-int n = Integer.parseInt(scanner.nextLine());
+int n = scanner.nextInt();
 scanner.close();
 
 int digitSum = 0;
@@ -98,20 +98,22 @@ print("The digit sum is ", digit_sum)
 
 ```py
 # unlike Java, a division will alwasy give you a float data type
-5 / 2
+assert 5 / 2 == 2.5
 
 # unless you want an explicit integer division
-5 // 2
+assert 5 // 2 == 2
 ```
+
+<small>* `assert` will raise an `AssertionError` if the condition is `False` - use it to check assumptions in your code.</small>
 
 ---
 
-## Iterating over a list of elements
+## Iterating over Elements 1/2: By Value
 
 <div class="sidebyside">
 
 ```java
-// ./java/M07_IteratingOverNames.java#L3-L7
+// ./java/M07_IteratingElementsByValue.java#L3-L7
 
 String[] names = {"Lisa", "John", "Susan", "Alex"};
 
@@ -121,7 +123,7 @@ for (String name : names) {
 ```
 
 ```py
-# ./python/m07_iterating_over_names.py
+# ./python/m07_iterating_elements_by_value.py
 
 names = ["Lisa", "John", "Susan", "Alex"]
 
@@ -132,14 +134,18 @@ for name in names:
 
 </div>
 
+### What do we notice here?
+
+- Iteration over a list of elements is quite similar in Java and python
+
 ---
 
-## Fun with lists
+## Iterating over Elements 2/2: By Index
 
 <div class="sidebyside">
 
 ```java
-// ./java/M07_FunWithLists.java#L3-L7
+// ./java/M07_IteratingElementsByIndex.java#L3-L7
 
 int[] numbers = {10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
 
@@ -149,7 +155,7 @@ for (int i = 5; i < 8; i++) {
 ```
 
 ```py
-# ./python/m07_fun_with_lists.py
+# ./python/m07_iterating_elements_by_index.py
 
 numbers = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 
@@ -162,23 +168,40 @@ for i in range(5, 8):
 
 ### What do we notice here?
 
-- Python always requires you to use the `x in y` syntax with a `for` loop
-- To replicate the behavior you might know, you have to use `range(start, stop)` that will give you numbers from `start` to `stop - 1`
-- Actually, it will give you an **iterator** object - if you really want the numbers in a list, you have to convert it to a list
+- Python only supports the `x in y` syntax with a `for` loop
+- To replicate the behavior you might know, you have to use `range(start, stop)`,  
+  which will give you numbers from `start` to `stop - 1`
+
+Actually, `range()` will give you an [**iterator**](https://docs.python.org/3/glossary.html#term-iterator)!  
+If you really want the numbers in a list, you have to convert it.
 
 ```py
+# iterators only allow getting the next element with next()
 range(5, 8)
 
+# lists allow arbitrary access by index
 list(range(5, 8))
 ```
 
 ---
 
-## Slicing
+## 🐍 Advanced Operations on Sequences
+<!-- .element: class="headline" -->
 
-Use cases like the one before are usually solved by slicing a list with Python.
+## Sequence Slicing 1/2
 
+Examples like the one before are usually solved by slicing list-like collections.  
 This is also very useful for mathematical applications, e.g. when working with a lot of arrays and matrices.
+
+```py
+# ./python/m07_sequence_slicing.py#L1-L5
+
+numbers = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+numbers[5:8]   # give me a new COPY of the list, starting at index 5, and ending at index 7
+
+# > [15, 16, 17]
+```
 
 The following variants are supported:
 
@@ -186,83 +209,98 @@ The following variants are supported:
 - `a[start:stop]`
 - `a[start:]`
 - `a[:stop]`
-- `a[:]` (copy the entire list)
+- `a[:]`
 
+**The `stop` index is always exclusive**, i.e. the element at index `stop` is not part of the resulting slice.
+
+---
+
+## Sequence Slicing 2/2: Examples
+
+<!-- embedme ./python/m07_sequence_slicing.py#L1-L1 -->
 ```py
 numbers = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+```
 
-# give me a new COPY of the list, starting at index 5, and ending at index 7
-numbers[5:8]
+```py
+# ./python/m07_sequence_slicing.py#L7-L14
 
-# everything except the first value
-numbers[1:]
+numbers[1:]    # all except the 1st item    > [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+numbers[:3]    # the first three items      > [10, 11, 12]
 
-# everything except the last value
-numbers[:-1]
+numbers[:-1]   # all except the last item   > [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+numbers[-2:]   # the last two items         > [19, 20]
 
-# the last two items
-numbers[-2:]
+numbers[::2]   # every 2nd item             > [10, 12, 14, 16, 18, 20]
+numbers[1::2]  # every 2nd, but start at 2  > [11, 13, 15, 17, 19]
+```
 
-# give me every second value
-numbers[::2]
+This also works with strings because they are just a list of characters.
 
-# start with the second value, then give me every second value
-numbers[1::2]
+```py
+# ./python/m07_sequence_slicing.py#L17-L20
 
-# this also works with strings (which are just arrays of characters)
 name = "Hello World"
 name[1:-1]
+
+# > 'ello Worl'
 ```
 
 ---
 
-## Reversing
+## Sequence Reversing
 
-Use `.reverse()` for in-place reversals or `reversed()` to get an reversed copy (actually, an iterator).
+- Use `reversed(a)` to iterate over the sequence in reverse order
+- Use `a.reverse()` on the object to reverse the items in-place
+- Slice out a reversed copy of the elements with `a[::-1]`
 
 ```py
-# easily reverse any list
-name[::-1]
+# ./python/m07_sequence_reversing.py
 
-# however, most likely you should use the `reversed` function
-# which, again, gives you an iterator
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-list(reversed(numbers))
+# iterator that iterates the list in reverse order
+reversed(numbers)
 
-numbers = [1, -10, 20, 11, 19, 0, -5, -1000, 100, 7]
-
-# or, reverse something in-place
+# reverse the list in-place
 numbers.reverse()
-numbers
+
+# slice a reversed copy of the elements
+numbers[::-1]
+
 ```
 
 ---
 
-## Sorting
+## Sequence Sorting
 
-Use `.sort()` for in-place sorting or `sorting()` to get a sorted copy (actually, an iterator).
+- Use `sorted(a)` to get a sorted list of the elements
+- Use `a.sort()` to sort the sequence in-place
+- Use the `reverse=True` [**keyword argument**](https://docs.python.org/3/glossary.html#term-argument) to reverse the sorting order
 
 ```py
+# ./python/m07_sequence_sorting.py
+
 numbers = [1, -10, 20, 11, 19, 0, -5, -1000, 100, 7]
 
+# get a sorted list of the elements
 sorted(numbers)
-
-# or, sort something in-place
-numbers.sort()
-numbers
-
-# and, in reverse order
 sorted(numbers, reverse=True)
+
+# sort the list in-place
+numbers.sort()
+numbers.sort(reverse=True)
+
 ```
 
 ---
 
-## Enumerating
+## Enumerating over Elements
 
 <div class="sidebyside">
 
 ```java
-// ./java/M07_EnumeratingOverNames.java#L3-L9
+// ./java/M07_EnumeratingOverElements.java#L3-L9
 
 String[] names = {"Lisa", "John", "Susan", "Alex"};
 
@@ -274,7 +312,7 @@ while (i < names.length) {
 ```
 
 ```py
-# ./python/m07_enumerating_over_names.py
+# ./python/m07_enumerating_over_elements.py
 
 names = ["Lisa", "John", "Susan", "Alex"]
 
@@ -287,17 +325,15 @@ for i, name in enumerate(names):
 
 ### What do we notice here?
 
-- Our loop iterates over two values now (actually, `enumerate()` creates tuples for us here)
+- Our loop iterates over two values now - `enumerate()` creates tuples for us here
 
 ---
 
 ## List Comprehension
 
-While we won't cover functional programming with `map`, `filter`, `reduce` yet, we can not miss list comprehensions.
+`[x for x in sequence]`
 
-List comprehensions work by mapping each value in a list to a new value and thus creating a new list.
-
-`[x for x in list]`
+**List comprehensions map each value in a list to a new value and thus create a new list.** *
 
 <div class="sidebyside">
 
@@ -319,7 +355,7 @@ for (double price : gross) {
 ```
 
 ```py
-# ./python/m07_price_tax.py
+# ./python/m07_price_tax.py#L1-L8
 
 prices = [12.3, 5.2, 8.7, 1.2, 8.0]
 gross = []
@@ -334,11 +370,13 @@ print(gross)
 
 </div>
 
+We can alos solve this example with list comprehension.
+
 ```py
-# but, in Python you can even do this
+# ./python/m07_price_tax.py#L11-L12
 
 prices = [12.3, 5.2, 8.7, 1.2, 8.0]
 gross = [price * 1.2 for price in prices if price > 8]
-
-print(gross)
 ```
+
+<small>* Python offers a lot of features for functional programming, like [`map`](https://docs.python.org/3/library/functions.html#map) / [`filter`](https://docs.python.org/3/library/functions.html#filter) / [`reduce`](https://docs.python.org/3/library/functools.html#functools.reduce) / [`zip`](https://docs.python.org/3/library/functions.html#zip) / [`all`](https://docs.python.org/3/library/functions.html#all) / [`any`](https://docs.python.org/3/library/functions.html#any) / ...</small>
