@@ -44,6 +44,7 @@
 .reveal p code,
 .reveal li code {
   color: #9c27b0;
+  padding: 0 3px;
 }
 
 /* side-by-side view with one or more columns */
