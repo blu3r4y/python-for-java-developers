@@ -34,8 +34,6 @@ ascii_symbol = 0x3f
 input_bitmask = 0b1011_1001
 ```
 
-<br />  
-
 <small>* "Floating point numbers are usually implemented using `double` in C; information about the precision and internal representation of floating point numbers for the machine on which your program is running is available in `sys.float_info`" - see [docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex)</small>
 
 ---

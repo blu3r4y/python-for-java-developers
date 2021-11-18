@@ -24,6 +24,11 @@
   font-weight: bold;
 }
 
+/* footnote style with small */
+small {
+  margin-top: 15px;
+}
+
 /* image style */
 .reveal img {
   display: block;
