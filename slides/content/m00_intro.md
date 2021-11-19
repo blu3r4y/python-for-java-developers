@@ -1,4 +1,4 @@
-## Python Crash Course for Java Developers
+# 🐍 Python for Java Developers
 <!-- .element: class="headline" -->
 
 🧑 Mario Kahlhofer  

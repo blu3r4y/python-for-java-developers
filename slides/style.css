@@ -17,6 +17,11 @@
   font-weight: bold !important;
 }
 
+/* do not bold first letter emoji */
+.reveal .headline::first-letter {
+  font-weight: normal !important;
+}
+
 /* code snippet link style */
 .reveal .snippet {
   background-color: #f3e5f5;
