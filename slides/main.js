@@ -1,14 +1,14 @@
-import Reveal from 'reveal.js';
-import RevealMarkdown from 'reveal.js/plugin/markdown/markdown.esm.js';
-import RevealHighlight from 'reveal.js/plugin/highlight/highlight.esm.js';
+import Reveal from "reveal.js";
+import RevealMarkdown from "reveal.js/plugin/markdown/markdown.esm.js";
+import RevealHighlight from "reveal.js/plugin/highlight/highlight.esm.js";
 
-import 'reveal.js/dist/reveal.css';
-import 'reveal.js/dist/theme/simple.css';
-import 'highlight.js/styles/idea.css';
-import './style.css';
+import "reveal.js/dist/reveal.css";
+import "reveal.js/dist/theme/simple.css";
+import "highlight.js/styles/github-dark.css";
+import "./style.css";
 
 let deck = new Reveal({
-  plugins: [RevealMarkdown, RevealHighlight]
+  plugins: [RevealMarkdown, RevealHighlight],
 });
 
 deck.initialize({
@@ -17,9 +17,9 @@ deck.initialize({
   center: false,
   hash: true,
   slideNumber: true,
-  showSlideNumber: 'print',
+  showSlideNumber: "print",
   pdfSeparateFragments: false,
   markdown: {
-    smartypants: true
-  }
+    smartypants: true,
+  },
 });
