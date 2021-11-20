@@ -1,7 +1,12 @@
 export default {
   plugins: [watch_markdown_files()],
+  /* final site will reside under this sub-path */
+  base: "./",
+  /* the reveal project root */
   root: "./slides",
-  publicDir: "./content", // this is relative to 'root'
+  /* relative to 'root' - the markdown content */
+  publicDir: "./content",
+  /* the embedded highlight.js are allowed to be large */
   build: {
     chunkSizeWarningLimit: 2048,
   },

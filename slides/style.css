@@ -27,13 +27,6 @@
   font-weight: normal !important;
 }
 
-/* code snippet link style */
-.reveal .snippet {
-  background-color: #f3e5f5;
-  padding: 10px;
-  font-weight: bold;
-}
-
 /* footnote style with small */
 .reveal small {
   margin-top: 15px;
@@ -57,10 +50,21 @@
 }
 
 /* color inline code only */
-.reveal p code,
+.reveal p:not(.snippet) code,
 .reveal li code {
-  color: #9c27b0;
-  padding: 0 3px;
+  padding: 2px 4px;
+  color: #1f1f1f;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+/* code snippet link style */
+.reveal .snippet {
+  padding: 10px;
+  color: #1f1f1f;
+  font-weight: bold;
+  background-color: #f3e5f5;
+  border-radius: 4px;
 }
 
 /* side-by-side view with one or more columns */
