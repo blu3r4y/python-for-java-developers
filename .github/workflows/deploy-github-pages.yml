@@ -4,12 +4,13 @@ on:
   push:
 
 jobs:
-  deploy-github-pages:
+  build-slides:
+    name: "Build slides"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: Setup build environment
+      - name: Setup node environment
         uses: actions/setup-node@v2
         with:
           node-version: "16"
@@ -26,9 +27,60 @@ jobs:
         run: npm run embed-verify
       - name: Build slides
         run: npm run build
+      - name: Upload slides artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: slides
+          path: ./slides/dist
+  build-excerpt:
+    name: "Build excerpt"
+    runs-on: ubuntu-latest
+    container:
+      image: docker://pandoc/core:2.16.1
+      options: --entrypoint=/bin/sh
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Create output directory
+        run: mkdir -p ./slides/dist
+      - name: Build excerpt
+        run: ./excerpt.sh
+        working-directory: slides
+      - name: Upload excerpt artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: excerpt
+          path: ./slides/dist/excerpt.html
+  deploy:
+    name: "Deploy to GitHub pages"
+    if: always()
+    needs: [build-slides, build-excerpt]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create artifact download directory
+        run: mkdir -p ./dist
+      - name: Download slides artifact
+        uses: actions/download-artifact@v2
+        continue-on-error: true
+        with:
+          name: slides
+          path: ./dist
+      - name: Download excerpt artifact
+        uses: actions/download-artifact@v2
+        continue-on-error: true
+        with:
+          name: excerpt
+          path: ./dist
+      - name: Check for existing artifacts
+        run: |
+          if [ -z "$(ls -A ./dist)" ]; then
+              exit 1 # folder empty, no artifacts
+          else
+              exit 0
+          fi
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./slides/dist
+          publish_dir: ./dist
           force_orphan: true
