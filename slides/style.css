@@ -9,6 +9,11 @@
   text-align: left;
 }
 
+/* more spacing between list items */
+.reveal ul li {
+  margin-bottom: 5px;
+}
+
 /* headline style for interactive slides */
 .reveal .headline {
   background-color: #2196f3;
@@ -30,7 +35,7 @@
 }
 
 /* footnote style with small */
-small {
+.reveal small {
   margin-top: 15px;
 }
 
@@ -45,9 +50,10 @@ small {
   margin: 0.5em auto 0 auto;
 }
 
-/* softer box shadow for code */
+/* softer box shadow and less line height for code */
 .reveal pre {
   box-shadow: 0px 5px 15px rgb(0 0 0 / 5%);
+  line-height: 1.05em;
 }
 
 /* color inline code only */
