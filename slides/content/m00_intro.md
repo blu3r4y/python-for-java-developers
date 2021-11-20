@@ -30,11 +30,12 @@
 
 ## Literature
 
-### Books
+### Books and Resources
 
-- 📚 Sarda, Deepak. **Python for the Busy Java Developer**. Apress, 2017.  
+- 📚 Sarda, Deepak. **Python for the Busy Java Developer.** Apress, 2017.  
   DOI: [10.1007/978-1-4842-3234-7](https://doi.org/10.1007/978-1-4842-3234-7)
   *(sadly, uses the deprecated Python 2 syntax)*
+- 🌍 **Real Python Tutorials.** [realpython.com](https://realpython.com/)
 
 ### Official Documentation
 
