@@ -10,14 +10,16 @@ class Passenger {
         this.lastName = lastName;
     }
 
-    void print() {
+    void display() {
         System.out.printf("%s %s %n", firstName, lastName);
     }
 
     static Passenger fromInput() {
         Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Enter first name: ");
         String firstName = scanner.nextLine();
+        System.out.print("Enter last name: ");
         String lastName = scanner.nextLine();
 
         scanner.close();
@@ -32,7 +34,7 @@ class PassengersProgram {
         Passenger lisa = new Passenger("Lisa", "Ha");
         Passenger user = Passenger.fromInput();
 
-        lisa.print();
-        user.print();
+        lisa.display();
+        user.display();
     }
 }

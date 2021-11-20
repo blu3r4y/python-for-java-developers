@@ -3,13 +3,12 @@
 # 🐍 Classes
 <!-- .element: class="headline" -->
 
-Python is object-oriented as well, of course, though, it follows a more lean approach towards classes.
-Let's have a look.
+Python is object-oriented, but follows a more lean approach towards classes.
 
 <div class="sidebyside">
 
 ```java
-// ./java/M09_PassengersProgram.java#L3-L38
+// ./java/M09_PassengersProgram.java#L3-L40
 
 class Passenger {
 
@@ -21,14 +20,16 @@ class Passenger {
         this.lastName = lastName;
     }
 
-    void print() {
+    void display() {
         System.out.printf("%s %s %n", firstName, lastName);
     }
 
     static Passenger fromInput() {
         Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Enter first name: ");
         String firstName = scanner.nextLine();
+        System.out.print("Enter last name: ");
         String lastName = scanner.nextLine();
 
         scanner.close();
@@ -43,13 +44,13 @@ class PassengersProgram {
         Passenger lisa = new Passenger("Lisa", "Ha");
         Passenger user = Passenger.fromInput();
 
-        lisa.print();
-        user.print();
+        lisa.display();
+        user.display();
     }
 }
 ```
 
-```py
+```py [|4-6|8-9|11-16|20-24|19|]
 # ./python/m09_passengers_program.py
 
 class Passenger:
@@ -62,16 +63,18 @@ class Passenger:
 
     @staticmethod
     def from_input():
-        first_name = input()
-        last_name = input()
+        first_name = input("Enter first name: ")
+        last_name = input("Enter last name: ")
 
         return Passenger(first_name, last_name)
 
-lisa = Passenger("Lisa", "Ha")
-# user = Passenger.from_input()
 
-lisa.display()
-# user.display()
+if __name__ == "__main__":
+    lisa = Passenger("Lisa", "Ha")
+    user = Passenger.from_input()
+
+    lisa.display()
+    user.display()
 
 ```
 
@@ -81,22 +84,32 @@ lisa.display()
 
 ### What do we notice here?
 
-- Python only ever has one constructor that is called `__init__` and must have the `self` parameter
-    - Python has no method overloading
-- We don't explicitly define the class properties `first_name` and `last_name`
-    - You create them on-the-fly in the constructor
-- What makes a function a method in Python is only governed by the explicit `self` parameter
-    - And you always have to use `self.` if you want to access class properties
-- A static method in Python needs the `@staticmethod` annotation and omits the `self` parameter
-    - A static method just means that it won't access any class properties
-- Creating a new object works similar in Python, but we omit the `new` keyword
-- There are no access modifiers and there also is no `final` in Python
+#### Constructors
+
+- There is only one **constructor** that is called `__init__` with a mandatory `self` parameter
+- Python does not support constructor overloading or **method overloading**
+- We don't explicitly define the **class properties** `first_name` and `last_name`,  
+  but you create them on-the-fly in the constructor or elsewhere
+
+#### Functions and methods
+
+- What makes a function a method is only governed by the explicit `self` parameter
+- You must always use `self.` if you want to access class properties
+- There are no access modifiers and there is also no `final` in Python
+
+#### Static methods
+
+- A **static method** needs the `@staticmethod` annotation and omits the `self` parameter
+- A static method just means that it won't access any class properties
+
+#### Instantiation
+
+- Creating a new object works similar, but you omit the `new` keyword
+- The `main` method in Python is actually a condition - we will learn more in the next modules
 
 ---
 
-## Interfaces
-
-What you might know from interfaces in Java can be achieved a little bit different with a dynamically-typed language like Python.
+## Informal Interfaces
 
 <div class="sidebyside">
 
@@ -138,10 +151,7 @@ class Square implements Shape {
 class ShapesProgram {
 
     public static void main(String[] args) {
-        Square square = new Square(10);
-        Circle circle = new Circle(5);
-
-        Shape[] shapes = {square, circle};
+        Shape[] shapes = { new Circle(5), new Square(10) };
         for (Shape shape : shapes) {
             System.out.println(shape.area());
         }
@@ -150,22 +160,29 @@ class ShapesProgram {
 
 ```
 
-```py
+```py [|3-5|8-13|16-21|24-26|]
 # ./python/m09_shapes_program.py
 
-class Circle:
+class Shape:
+    def area(self):
+        pass
+
+
+class Circle(Shape):
     def __init__(self, radius):
         self.radius = radius
 
     def area(self):
         return 3.14159 * self.radius * self.radius
 
-class Square:
+
+class Square(Shape):
     def __init__(self, length):
         self.length = length
 
     def area(self):
         return self.length * self.length
+
 
 shapes = [Circle(5), Square(10)]
 for shape in shapes:
@@ -175,11 +192,47 @@ for shape in shapes:
 
 </div>
 
----
-
 ### What do we notice here?
 
-- Because there is no hard type checking at compile-time, we can rely on duck-typing here
-- However, for a better code structures, Python offers the following
-    - abstract classes (see https://docs.python.org/3/library/abc.html)
-    - protocols (see https://www.python.org/dev/peps/pep-0544/)
+- There is no `interface` type in Python, instead we use a normal `class` and inhert from it
+- Methods are overridden without an explicit annotation - they are always replaced
+- No type checks are enforced by Python, try removing `Shape` or renaming the `area()` method ...
+
+---
+
+## Duck-Typing
+
+Since there is NO type-checking at compile-time, we may also solely rely on [**duck-typing**](https://docs.python.org/3/glossary.html#term-duck-typing).  
+An `AttributeError` is thrown at runtime, if the method you are calling wouldn't exist. *
+
+```py [|3-16|19-21|21|]
+# ./python/m09_shapes_duck_typing.py
+
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return 3.14159 * self.radius * self.radius
+
+
+class Square:
+    def __init__(self, length):
+        self.length = length
+
+    def area(self):
+        return self.length * self.length
+
+
+shapes = [Circle(5), Square(10)]
+for shape in shapes:
+    print(shape.area())
+
+```
+
+### But, how can I have a "real" interfaces and inheritance in Python?
+
+- Use abstract classes via the [**`abc` module**](https://docs.python.org/3/library/abc.html)
+- Learn more about formal interfaces at [realpython.com/python-interface](https://realpython.com/python-interface/)
+
+<small>* Look into [**type hints**](https://docs.python.org/3/library/typing.html) to have better type-checking at runtime and even before you run your code.</small>

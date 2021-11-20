@@ -8,13 +8,15 @@ class Passenger:
 
     @staticmethod
     def from_input():
-        first_name = input()
-        last_name = input()
+        first_name = input("Enter first name: ")
+        last_name = input("Enter last name: ")
 
         return Passenger(first_name, last_name)
 
-lisa = Passenger("Lisa", "Ha")
-# user = Passenger.from_input()
 
-lisa.display()
-# user.display()
+if __name__ == "__main__":
+    lisa = Passenger("Lisa", "Ha")
+    user = Passenger.from_input()
+
+    lisa.display()
+    user.display()
