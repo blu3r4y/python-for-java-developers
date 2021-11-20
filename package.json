@@ -6,7 +6,8 @@
     "dev": "vite --open",
     "build": "vite build",
     "serve": "vite preview --open",
-    "embed": "embedme ./slides/content/*.md --source-root ./snippets/"
+    "embed": "embedme ./slides/content/*.md --source-root ./snippets/",
+    "embed-verify": "embedme --verify ./slides/content/*.md --source-root ./snippets/"
   },
   "repository": {
     "type": "git",

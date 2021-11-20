@@ -6,16 +6,11 @@
 
 If you are a Java developer and want to get a quick glance at Python, this course is for you.
 
-## Start an interactive notebook
+## Course Guide
 
-If you want to play around with Python locally, you may start a stand-alone notebook:
+### Start an interactive notebook
+
+If you want to play around with Python locally, you may start a stand-alone notebook.
 
     python -m pip install -r requirements.txt
     python -m jupyter lab --notebook-dir .
-
-## Show the presentation
-
-If you want to render the presentation locally, use Vite:
-
-    npm install
-    npm run dev
