@@ -1,4 +1,4 @@
-<!-- .slide: id="syntax-primer" -->
+<!-- .slide: id="-syntax-primer" -->
 
 # 🐍 Syntax Primer
 <!-- .element: class="headline" -->

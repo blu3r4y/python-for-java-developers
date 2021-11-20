@@ -1,4 +1,4 @@
-<!-- .slide: id="classes" -->
+<!-- .slide: id="-classes" -->
 
 # 🐍 Classes
 <!-- .element: class="headline" -->

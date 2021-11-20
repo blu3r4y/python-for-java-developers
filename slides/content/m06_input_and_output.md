@@ -1,4 +1,4 @@
-<!-- .slide: id="input-and-output" -->
+<!-- .slide: id="-input-and-output" -->
 
 # 🐍 Input and Output
 <!-- .element: class="headline" -->

@@ -1,9 +1,9 @@
-<!-- .slide: id="zen-of-python" -->
+<!-- .slide: id="-zen-of-python" -->
 
 # 🐍 Zen of Python
 <!-- .element: class="headline" -->
 
-If you ever need help, type `help` - use the [resources mentioned in the beginning](#/literature) - or, ask Google.
+If you ever need help, type `help` - use the [resources mentioned in the beginning](#-literature) - or, ask Google.
 
 ```py
 help(sorted)

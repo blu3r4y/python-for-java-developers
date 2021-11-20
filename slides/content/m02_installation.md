@@ -1,4 +1,4 @@
-<!-- .slide: id="installation" -->
+<!-- .slide: id="-installation" -->
 
 # 🐍 Installation
 <!-- .element: class="headline" -->

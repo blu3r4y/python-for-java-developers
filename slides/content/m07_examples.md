@@ -1,4 +1,4 @@
-<!-- .slide: id="examples" -->
+<!-- .slide: id="-examples" -->
 
 # 🐍 Examples
 <!-- .element: class="headline" -->
@@ -370,7 +370,7 @@ print(gross)
 
 </div>
 
-We can alos solve this example with list comprehension.
+We can also solve this example with list comprehension.
 
 ```py
 # ./python/m07_price_tax.py#L11-L12

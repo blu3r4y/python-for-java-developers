@@ -7,30 +7,30 @@
 
 ![](images/python-xkcd.png) <!-- .element style="height: 20em;" -->
 
-<small>(c) https://xkcd.com/353</small>
+<small>(c) [https://xkcd.com/353](https://xkcd.com/353)</small>
 
 ---
 
-<!-- .slide: id="agenda" -->
+<!-- .slide: id="-agenda" -->
 
 ## Agenda
 
-- [What is Python?](#/what-is-python)
-- [Installation](#/installation)
-- [Syntax Primer](#/syntax-primer)
-- [Data Types](#/data-types)
-- [Collections](#/collections)
-- [Input and Output](#/input-and-output)
-- [Examples](#/examples)
-- [Functions](#/functions)
-- [Classes](#/classes)
-- [Code Organization](#/code-organization)
-- [Libraries](#/libraries)
-- [Zen of Python](#/zen-of-python)
+- [What is Python?](#-what-is-python)
+- [Installation](#-installation)
+- [Syntax Primer](#-syntax-primer)
+- [Data Types](#-data-types)
+- [Collections](#-collections)
+- [Input and Output](#-input-and-output)
+- [Examples](#-examples)
+- [Functions](#-functions)
+- [Classes](#-classes)
+- [Code Organization](#-code-organization)
+- [Libraries](#-libraries)
+- [Zen of Python](#-zen-of-python)
 
 ---
 
-<!-- .slide: id="literature" -->
+<!-- .slide: id="-literature" -->
 
 ## Literature
 

@@ -1,4 +1,4 @@
-<!-- .slide: id="collections" -->
+<!-- .slide: id="-collections" -->
 
 # 🐍 Collections
 <!-- .element: class="headline" -->
