@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+
 def plot():
     # get 1000 numbers between -5 and 5
     xs = np.linspace(-5, 5, 1000)

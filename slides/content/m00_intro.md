@@ -11,6 +11,8 @@
 
 ---
 
+<!-- .slide: id="agenda" -->
+
 ## Agenda
 
 - [What is Python?](#/what-is-python)
@@ -27,6 +29,8 @@
 - [Zen of Python](#/zen-of-python)
 
 ---
+
+<!-- .slide: id="literature" -->
 
 ## Literature
 
