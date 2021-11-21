@@ -99,7 +99,7 @@ if __name__ == "__main__":
 
 #### Static methods
 
-- A **static method** needs the `@staticmethod` annotation and omits the `self` parameter
+- A **static method** needs the `@staticmethod` [**decorator**](https://docs.python.org/3/glossary.html#term-decorator) and omits the `self` parameter
 - A static method just means that it won't access any class properties
 
 #### Instantiation

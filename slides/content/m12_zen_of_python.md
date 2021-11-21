@@ -17,7 +17,7 @@ help(sorted)
 # >     reverse flag can be set to request the result in descending order.
 ```
 
-Never forget the Zen of Python.
+Never forget the [**Zen of Python**](https://www.python.org/dev/peps/pep-0020/).
 
 ```py
 import this

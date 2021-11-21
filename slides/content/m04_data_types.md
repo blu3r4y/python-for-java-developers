@@ -10,8 +10,8 @@ Find them all at [docs.python.org/3/library/stdtypes.html](https://docs.python.o
 - Text Types
 - Boolean Types
  
-**In Python, you do not specify types explicitly.**  
-Although, you can have "type hints", learn more at [docs.python.org/3/library/typing.html](https://docs.python.org/3/library/typing.html)
+**In Python, you do not specify types explicitly.**
+Although, you can have [**type hints**](https://docs.python.org/3/library/typing.html).
 
 ---
 
