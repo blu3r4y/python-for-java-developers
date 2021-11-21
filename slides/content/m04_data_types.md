@@ -123,9 +123,43 @@ hold line breaks
 now"""
 ```
 
+<small>* Immutable, i.e., unchangeable, objects can not be modified after their creation.</small>  
+
+### String Conversion
+
+Many types in Python can be converted to a string with `str()` - similar to `.toString()` in Java.  
+As seen in the example, if you concatenate a string with a non-string, you even have to. **
+
+<div class="sidebyside">
+
+```java
+// ./java/M04_StringConversion.java#L3-L4
+
+int num = 42;
+System.out.println("The number is " + num);
+```
+
+```py
+# ./python/m04_string_conversion.py
+
+num = 42
+print("The number is " + str(num))
+
+# alternative, which ONLY works for print()
+print("The number is", num)
+
+# print("The number is " + num)
+# 💥 TypeError: can only concatenate str (not "int") to str
+
+```
+
+</div>
+
+---
+
 ### String Concatenation
 
-Use `str.join()` in Python to concatenate a large number of strings. **
+Use `str.join()` in Python to concatenate a large number of strings. *
 
 <div class="sidebyside">
 
@@ -154,8 +188,7 @@ result = " ".join([a, b, c, d])
 
 </div>
 
-<small>* Immutable, i.e., unchangeable, objects can not be modified after their creation.</small>  
-<small>** The equivalent of a [`StringBuilder`](https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html) in Java would be [`io.StringIO`](https://docs.python.org/3.9/library/io.html#io.StringIO) in Python.</small>
+<small>* The equivalent of a [`StringBuilder`](https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html) in Java would be [`io.StringIO`](https://docs.python.org/3.9/library/io.html#io.StringIO) in Python.</small>
 
 ---
 
