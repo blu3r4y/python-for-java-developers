@@ -92,3 +92,31 @@ print(f"{ratio:.1%}")  # percentage
 # > 25.0%
 
 ```
+
+---
+
+## Reading and Writing Files
+
+Among many, here is one way to read and write a file in Python.  
+Learn more at [docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files).
+
+```py [|5-6|8-10|]
+# ./python/m06_file_io.py#L3-L11
+
+filename = "m06_file_io.txt"
+
+with open(filename, "w+") as f:
+    f.write("Hello\n")
+    f.write("File!\n")
+
+with open(filename, "r") as f:
+    for line in f.read().splitlines():
+        print(line)
+```
+
+### What do we notice here?
+
+- The default file mode is `r` for reading - use `w` for writing, `w+` for reading and writing *
+- The default encoding is `ascii`, use the `encoding="utf-8"` [**keyword argument**](https://docs.python.org/3/glossary.html#term-argument) otherwise
+
+<small>* Read about possible modes at [gto76.github.io/python-cheatsheet/#open](https://gto76.github.io/python-cheatsheet/#open).</small>
