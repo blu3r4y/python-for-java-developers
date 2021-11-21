@@ -14,7 +14,9 @@ name = input("Please enter your name: ")
 print("Your name is", name)
 ```
 
-Don't forget data type conversions ...
+<div class="fragment">
+
+💡 **Don't forget data type conversions!**
 
 ```py
 # ./python/m06_input.py#L4-L11
@@ -28,6 +30,8 @@ as_float = float(number)
 print(as_int, as_float)
 
 ```
+
+</div>
 
 ---
 
@@ -100,7 +104,7 @@ print(f"{ratio:.1%}")  # percentage
 Among many, here is one way to read and write a file in Python.  
 Learn more at [docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files).
 
-```py [|5-6|8-10|]
+```py [|5-7|9-11|]
 # ./python/m06_file_io.py#L3-L11
 
 filename = "m06_file_io.txt"
@@ -114,9 +118,13 @@ with open(filename, "r") as f:
         print(line)
 ```
 
+<div class="fragment">
+
 ### What do we notice here?
 
 - The default file mode is `r` for reading - use `w` for writing, `w+` for reading and writing *
 - The default encoding is `ascii`, use the `encoding="utf-8"` [**keyword argument**](https://docs.python.org/3/glossary.html#term-argument) otherwise
 
 <small>* Read about possible modes at [gto76.github.io/python-cheatsheet/#open](https://gto76.github.io/python-cheatsheet/#open).</small>
+
+</div>

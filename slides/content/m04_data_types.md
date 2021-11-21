@@ -10,10 +10,12 @@ Find all "built-in types" at [docs.python.org/3/library/stdtypes.html](https://d
 - Text Types
 - Boolean Types
  
-**In Python, you do not specify types explicitly.**
+💡 **In Python, you do not specify types explicitly!**
 Although, you can have [**type hints**](https://docs.python.org/3/library/typing.html).
 
 <small>* You can think of a variable in Python as a "tag" or "name" that is attached to some object, and NOT as the "container" that holds some value. All types in Python are essentially objects, even the numeric, text, and boolean ones. However, don't wrap your head around this too much - as you will see, things turn out to behave quite similar to Java.</small>
+
+<div class="fragment">
 
 ### Python is dynamically-typed 
 
@@ -26,6 +28,8 @@ x = True
 ```
 
 <small>** Speaking in the notion of "tags" and "names", this means that you can freely re-assign the "tag" or "name" to point to a different location.</small>
+
+</div>
 
 ---
 
@@ -139,6 +143,8 @@ now"""
 
 <small>* Immutable, i.e., unchangeable, objects can not be modified after their creation.</small>  
 
+<div class="fragment">
+
 ### String Conversion
 
 Many types in Python can be converted to a string with `str()` - similar to `.toString()` in Java.  
@@ -166,6 +172,8 @@ print("The number is", num)
 # 💥 TypeError: can only concatenate str (not "int") to str
 
 ```
+
+</div>
 
 </div>
 
@@ -220,6 +228,8 @@ print("not x =", not x)      # logical not
 
 ```
 
+<div class="fragment">
+
 ### Bitwise Expressions
 
 You can also perform binary computations with bitwise operators.  
@@ -241,3 +251,5 @@ print(f"bin: {is_bit_set:08b}")
 # > bin: 00010000
 
 ```
+
+</div>

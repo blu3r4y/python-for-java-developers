@@ -3,6 +3,8 @@
 # 🐍 Zen of Python
 <!-- .element: class="headline" -->
 
+<div class="fragment">
+
 If you ever need help, type `help` - use the [resources mentioned in the beginning](#-literature) - or, ask Google.
 
 ```py
@@ -17,14 +19,22 @@ help(sorted)
 # >     reverse flag can be set to request the result in descending order.
 ```
 
+</div>
+<div class="fragment">
+
 Never forget the [**Zen of Python**](https://www.python.org/dev/peps/pep-0020/).
 
 ```py
 import this
 ```
 
+</div>
+<div class="fragment">
+
 And also try out this one.
 
 ```py
 import antigravity
 ```
+
+</div>

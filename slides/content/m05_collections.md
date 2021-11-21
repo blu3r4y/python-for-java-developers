@@ -36,9 +36,13 @@ names.remove(-5)        # remove the first occurrence from the list
 del names[0]            # remove by index
 ```
 
+<div class="fragment" data-fragment-index="0">
+
 ### What do we notice here?
 
 - Collections in Python are allowed to contain mixed types of data
+
+</div>
 
 ---
 
@@ -72,14 +76,17 @@ pair = ("Jonas", 12)  # create a tuple
 pair[0]               # get element by index, similar to lists
 ```
 
-**Tuples are always immutable!**  
+<div class="fragment">
+
+💡 **Tuples are always immutable!**
+
 You can NOT modify, append, or delete anything from them after you created one.
 
 ```py
-#  pair[1] = 13
+# pair[1] = 13
 # 💥 TypeError: 'tuple' object does not support item assignment
 
-#  pair.append(123)
+# pair.append(123)
 # 💥 AttributeError: 'tuple' object has no attribute 'append'
 ```
 
@@ -93,6 +100,8 @@ list(numbers)
 letters = ["A", "B", "C"]
 tuple(letters)
 ```
+
+</div>
 
 ---
 
@@ -126,7 +135,13 @@ print(name, age)
 
 ```
 
-Actually, whenever you use a comma `,` in such contexts, a `tuple` is used implicitly.
+<div class="fragment">
+
+### What do we notice here?
+
+- Actually, whenever you use a comma `,` in such contexts, a `tuple` is used implicitly.
+
+</div>
 
 ---
 
@@ -181,10 +196,12 @@ if 2 in numbers:
     numbers.remove(2)
 ```
 
-**You can NOT retrieve elements by index from a set!**
+<div class="fragment">
+
+💡 **You can NOT retrieve elements by index from a set!**
 
 ```py
-#  numbers[0]
+# numbers[0]
 # 💥 TypeError: 'set' object is not subscriptable
 ```
 
@@ -197,6 +214,8 @@ You must iterate over them or convert the set to a list with `list(elements)`
 for val in numbers:
     print(val)
 ```
+
+</div>
 
 ---
 

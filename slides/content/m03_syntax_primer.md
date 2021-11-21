@@ -38,6 +38,8 @@ print("The maximum value is", maximum)
 
 </div>
 
+<div class="fragment">
+
 ### What do we notice here?
 
 - There are no semicolons `;`
@@ -48,3 +50,5 @@ print("The maximum value is", maximum)
   ... actually, there are no arrays in Python
 - The `for` and `if` syntax is slightly different
 - Comments are written with the hashtag symbol `#`
+
+</div>

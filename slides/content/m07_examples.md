@@ -45,9 +45,13 @@ else:
 
 </div>
 
+<div class="fragment">
+
 ### What do we notice here?
 
 - Python has no `switch` expression, you have to make a cascade of `if` / `elif` / `else` statements
+
+</div>
 
 ---
 
@@ -90,6 +94,8 @@ print("The digit sum is ", digit_sum)
 
 </div>
 
+<div class="fragment">
+
 ### What do we notice here?
 
 - Reading from user input is done with `input()` and can also output a prompt
@@ -105,6 +111,8 @@ assert 5 // 2 == 2
 ```
 
 <small>* `assert` will raise an `AssertionError` if the condition is `False` - use it to check assumptions in your code.</small>
+
+</div>
 
 ---
 
@@ -134,9 +142,13 @@ for name in names:
 
 </div>
 
+<div class="fragment">
+
 ### What do we notice here?
 
 - Iteration over a list of elements is quite similar in Java and python
+
+</div>
 
 ---
 
@@ -166,14 +178,20 @@ for i in range(5, 8):
 
 </div>
 
+<div class="fragment">
+
 ### What do we notice here?
 
 - Python only supports the `x in y` syntax with a `for` loop
 - To replicate the behavior you might know, you have to use `range(start, stop)`,  
   which will give you numbers from `start` to `stop - 1`
 
-Actually, `range()` will give you an [**iterator**](https://docs.python.org/3/glossary.html#term-iterator)!  
-If you really want the numbers in a list, you have to convert it.
+</div>
+<div class="fragment">
+
+💡 **Actually, `range()` will give you an [iterator](https://docs.python.org/3/glossary.html#term-iterator)!**
+
+If you really want the numbers in a list, you have to convert the result.
 
 ```py
 # iterators only allow getting the next element with next()
@@ -182,6 +200,8 @@ range(5, 8)
 # lists allow arbitrary access by index
 list(range(5, 8))
 ```
+
+</div>
 
 ---
 
@@ -203,6 +223,8 @@ numbers[5:8]   # give me a new COPY of the list, starting at index 5, and ending
 # > [15, 16, 17]
 ```
 
+<div class="fragment">
+
 The following variants are supported:
 
 - `a[start:stop:step]`
@@ -213,6 +235,8 @@ The following variants are supported:
 
 **The `stop` index is always exclusive**, i.e. the element at index `stop` is not part of the resulting slice.
 
+</div>
+
 ---
 
 ## Sequence Slicing 2/2: Examples
@@ -222,7 +246,7 @@ The following variants are supported:
 numbers = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 ```
 
-```py
+```py [|3-4|6-7|9-10|]
 # ./python/m07_sequence_slicing.py#L7-L14
 
 numbers[1:]    # all except the 1st item    > [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
@@ -235,6 +259,8 @@ numbers[::2]   # every 2nd item             > [10, 12, 14, 16, 18, 20]
 numbers[1::2]  # every 2nd, but start at 2  > [11, 13, 15, 17, 19]
 ```
 
+<div class="fragment">
+
 This also works with strings because they are just a list of characters.
 
 ```py
@@ -246,6 +272,8 @@ name[1:-1]
 # > 'ello Worl'
 ```
 
+</div>
+
 ---
 
 ## Sequence Reversing
@@ -254,7 +282,7 @@ name[1:-1]
 - Use `a.reverse()` on the object to reverse the items in-place
 - Slice out a reversed copy of the elements with `a[::-1]`
 
-```py
+```py [|5-6|8-9|11-12|]
 # ./python/m07_sequence_reversing.py
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
@@ -278,7 +306,7 @@ numbers[::-1]
 - Use `a.sort()` to sort the sequence in-place
 - Use the `reverse=True` [**keyword argument**](https://docs.python.org/3/glossary.html#term-argument) to reverse the sorting order
 
-```py
+```py [|5-7|9-11|]
 # ./python/m07_sequence_sorting.py
 
 numbers = [1, -10, 20, 11, 19, 0, -5, -1000, 100, 7]
@@ -323,17 +351,17 @@ for i, name in enumerate(names):
 
 </div>
 
+<div class="fragment">
+
 ### What do we notice here?
 
 - Our loop iterates over two values now - `enumerate()` creates tuples for us here
 
+</div>
+
 ---
 
-## List Comprehension
-
-`[x for x in sequence]`
-
-**List comprehensions map each value in a list to a new value and thus create a new list.** *
+## Price Tax Computation
 
 <div class="sidebyside">
 
@@ -370,7 +398,13 @@ print(gross)
 
 </div>
 
-We can also solve this example with list comprehension.
+<div class="fragment">
+
+### 💡 List Comprehension
+
+List comprehensions map each value in a list to a new value and thus create a new list. *
+
+`[x for x in sequence]`
 
 ```py
 # ./python/m07_price_tax.py#L11-L12
@@ -380,3 +414,5 @@ gross = [price * 1.2 for price in prices if price > 8]
 ```
 
 <small>* Python offers a lot of features for functional programming, like [`map`](https://docs.python.org/3/library/functions.html#map) / [`filter`](https://docs.python.org/3/library/functions.html#filter) / [`reduce`](https://docs.python.org/3/library/functools.html#functools.reduce) / [`zip`](https://docs.python.org/3/library/functions.html#zip) / [`all`](https://docs.python.org/3/library/functions.html#all) / [`any`](https://docs.python.org/3/library/functions.html#any) / ...</small>
+
+</div>

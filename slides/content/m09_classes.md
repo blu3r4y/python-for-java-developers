@@ -50,7 +50,7 @@ class PassengersProgram {
 }
 ```
 
-```py [|4-6|8-9|11-16|20-24|19|]
+```py [|3|4-6|8-9|11-16|20-24|19|]
 # ./python/m09_passengers_program.py
 
 class Passenger:
@@ -84,6 +84,8 @@ if __name__ == "__main__":
 
 ### What do we notice here?
 
+<div class="fragment">
+
 #### Constructors
 
 - There is only one **constructor** that is called `__init__` with a mandatory `self` parameter
@@ -91,21 +93,32 @@ if __name__ == "__main__":
 - We don't explicitly define the **class properties** `first_name` and `last_name`,  
   but you create them on-the-fly in the constructor or elsewhere
 
+</div>
+<div class="fragment">
+
 #### Functions and methods
 
 - What makes a function a method is only governed by the explicit `self` parameter
 - You must always use `self.` if you want to access class properties
 - There are no access modifiers and there is also no `final` in Python
 
+</div>
+<div class="fragment">
+
 #### Static methods
 
 - A **static method** needs the `@staticmethod` [**decorator**](https://docs.python.org/3/glossary.html#term-decorator) and omits the `self` parameter
 - A static method just means that it won't access any class properties
 
+</div>
+<div class="fragment">
+
 #### Instantiation
 
 - Creating a new object works similar, but you omit the `new` keyword
 - The `main` method in Python is actually a condition - we will learn more in the next modules
+
+</div>
 
 ---
 
@@ -192,11 +205,15 @@ for shape in shapes:
 
 </div>
 
+<div class="fragment">
+
 ### What do we notice here?
 
 - There is no `interface` type in Python, instead we use a normal `class` and inhert from it
 - Methods are overridden without an explicit annotation - they are always replaced
 - No type checks are enforced by Python, try removing `Shape` or renaming the `area()` method ...
+
+</div>
 
 ---
 
@@ -230,9 +247,13 @@ for shape in shapes:
 
 ```
 
+<div class="fragment">
+
 ### But, how can I have a "real" interfaces and inheritance in Python?
 
 - Use abstract classes via the [**`abc` module**](https://docs.python.org/3/library/abc.html)
 - Learn more about formal interfaces at [realpython.com/python-interface](https://realpython.com/python-interface/)
 
 <small>* Look into [**type hints**](https://docs.python.org/3/library/typing.html) to have better type-checking at runtime and even before you run your code.</small>
+
+</div>

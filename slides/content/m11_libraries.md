@@ -15,13 +15,17 @@ Don't re-invent the wheel for various tasks, have a look at what packages exist 
 - `requests` - network requests, download files
 - `tkinter` & `pyqt` - graphical user interfaces
 
-Install new packages with `pip`
+💡 **Install new packages with `pip`**
 
 ```sh
 python -m pip install <package-name>
 ```
 
 ---
+
+## Library Usage
+
+<div class="fragment">
 
 ### Compute and show a parabola with `numpy` and `matplotlib`
 
@@ -43,6 +47,9 @@ plt.show()
 
 ```
 
+</div>
+<div class="fragment">
+
 ### Read a tabular dataset with `pandas`
 
 ```py
@@ -55,3 +62,5 @@ df = pd.read_csv("https://archive.ics.uci.edu/ml/machine-learning-databases/iris
 print(df)
 
 ```
+
+</div>

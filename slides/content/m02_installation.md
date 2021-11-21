@@ -14,7 +14,7 @@ Go to [python.org](https://www.python.org/) and install the 64-bit version of Py
 
 The most popular IDEs are [IntelliJ PyCharm](https://www.jetbrains.com/pycharm/) or [Visual Studio Code](https://code.visualstudio.com/).
 
-<div class="fragment" data-fragment-index="1">
+<div class="fragment">
 
 ### What is Anaconda?
 
@@ -31,6 +31,8 @@ If you intend to use lots of scientific packages, you can install [Anaconda](htt
 
 Notebooks let you mix code and documentation, usually for prototyping or documentation purposes.
 
+<div class="fragment">
+
 ### Installation
 
 **Jupyter Notebooks** are the "classic" notebooks and **Jupyter Labs** is the new IDE-like successor of them.
@@ -42,6 +44,9 @@ pip install jupyter jupyterlab
 python -m pip install jupyter jupyterlab
 ```
 
+</div>
+<div class="fragment">
+
 ### Usage
 
 You may want to open `*.ipynb`  notebook files directly within [VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks) or [PyCharm](https://www.jetbrains.com/help/pycharm/jupyter-notebook-support.html).
@@ -52,7 +57,12 @@ python -m juypter notebook [--notebook-dir <path>]
 python -m jupyter lab [--notebook-dir <path>]
 ```
 
-Try it out!
+</div>
+<div class="fragment">
+
+### Try it now
 
 📜 `./python/m02_jupyter_introduction.ipynb`
 <!-- .element: class="snippet" -->
+
+</div>
