@@ -1,6 +1,6 @@
 # Python Crash Course for Java Developers
 
-[![Binder](https://mybinder.org/badge_logo.svg?style=flat-square)](https://mybinder.org/v2/gh/blu3r4y/python-for-java-developers/update-2021?labpath=snippets%2Fpython%2Fm02_jupyter_introduction.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg?style=flat-square)](https://mybinder.org/v2/gh/blu3r4y/python-for-java-developers/main?labpath=snippets%2Fpython%2Fm02_jupyter_introduction.ipynb)
 [![Slides](https://img.shields.io/website?label=slides&logo=github&up_message=click&url=https%3A%2F%2Fblu3r4y.github.io%2Fpython-for-java-developers%2F)](https://blu3r4y.github.io/python-for-java-developers/)
 [![Excerpt](https://img.shields.io/website?label=excerpt&logo=github&up_message=click&url=https%3A%2F%2Fblu3r4y.github.io%2Fpython-for-java-developers%2Fexcerpt.html)](https://blu3r4y.github.io/python-for-java-developers/excerpt.html)
 [![PDF](https://img.shields.io/website?label=pdf&logo=adobeacrobatreader&up_message=click&url=https%3A%2F%2Fblu3r4y.github.io%2Fpython-for-java-developers%2F%3Fprint-pdf)](https://blu3r4y.github.io/python-for-java-developers/?print-pdf)
