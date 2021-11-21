@@ -3,8 +3,8 @@
 # 🐍 Data Types
 <!-- .element: class="headline" -->
 
-We will only look into a few data types of Python.  
-Find them all at [docs.python.org/3/library/stdtypes.html](https://docs.python.org/3/library/stdtypes.html)
+We will only look into a few non-container data types of Python, which Java would call [**primitive types**](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html). *  
+Find all "built-in types" at [docs.python.org/3/library/stdtypes.html](https://docs.python.org/3/library/stdtypes.html)
 
 - Numeric Types
 - Text Types
@@ -12,6 +12,20 @@ Find them all at [docs.python.org/3/library/stdtypes.html](https://docs.python.o
  
 **In Python, you do not specify types explicitly.**
 Although, you can have [**type hints**](https://docs.python.org/3/library/typing.html).
+
+<small>* You can think of a variable in Python as a "tag" or "name" that is attached to some object, and NOT as the "container" that holds some value. All types in Python are essentially objects, even the numeric, text, and boolean ones. However, don't wrap your head around this too much - as you will see, things turn out to behave quite similar to Java.</small>
+
+### Python is dynamically-typed 
+
+Unlike Java, you can re-assign values of different types to the same variable as you wish. **
+
+```py
+x = 1416787301
+x = "is"
+x = True
+```
+
+<small>** Speaking in the notion of "tags" and "names", this means that you can freely re-assign the "tag" or "name" to point to a different location.</small>
 
 ---
 
