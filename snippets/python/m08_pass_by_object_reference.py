@@ -9,11 +9,7 @@ def append(numbers):
 one_two_three = [1, 2, 3]
 
 replace(one_two_three)
-print(one_two_three)
-
-# > [1, 2, 3]
+print(one_two_three)    # > [1, 2, 3]
 
 append(one_two_three)
-print(one_two_three)
-
-# > [1, 2, 3, 42]
+print(one_two_three)    # > [1, 2, 3, 42]
