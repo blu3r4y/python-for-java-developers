@@ -36,9 +36,15 @@ names.remove(-5)        # remove the first occurrence from the list
 del names[0]            # remove by index
 ```
 
+### What do we notice here?
+
+- Collections in Python are allowed to contain mixed types of data
+
 ---
 
 ## Lists 2/2: More list operations
+
+Learn about all list operations at [docs.python.org/3/tutorial/datastructures.html#more-on-lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists).
 
 ```py [|3-4|6-7|9-10|]
 # ./python/m05_list_operations.py#L18-L26
@@ -53,10 +59,6 @@ len(numbers)            # total number of elements in the list
 merged = [1, 2, 3] + [4, 5, 6]
 
 ```
-
-<br />
-
-Learn about all list operations at [docs.python.org/3/tutorial/datastructures.html#more-on-lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists).
 
 ---
 
