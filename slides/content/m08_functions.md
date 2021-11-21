@@ -8,7 +8,7 @@
 ```java
 // ./java/M08_RectangleFunctions.java#L2-L16
 
-static double rectangleArea(double a, double b) {
+static double area(double a, double b) {
     return a * b;
 }
 
@@ -17,8 +17,8 @@ static boolean isSquare(double a, double b) {
 }
 
 public static void main(String[] args) {
-    System.out.println("rectangleArea(1, 5) = " + rectangleArea(1, 5));
-    System.out.println("rectangleArea(1.5, 2.3) = " + rectangleArea(1.5, 2.3));
+    System.out.println("area(1, 5) = " + area(1, 5));
+    System.out.println("area(1.5, 2.3) = " + area(1.5, 2.3));
 
     System.out.println("isSquare(1, 5) = " + isSquare(1, 5));
     System.out.println("isSquare(5, 5) = " + isSquare(5, 5));
@@ -28,7 +28,7 @@ public static void main(String[] args) {
 ```py
 # ./python/m08_rectangle_functions.py#L1-L13
 
-def rectangle_area(a, b):
+def area(a, b):
     return a * b
 
 
@@ -36,11 +36,11 @@ def is_square(a, b):
     return a == b
 
 
-print("rectangleArea(1, 5) =", rectangle_area(1, 5))
-print("rectangleArea(1.5, 2.3) =", rectangle_area(1.5, 2.3))
+print("area(1, 5) =", area(1, 5))
+print("area(1.5, 2.3) =", area(1.5, 2.3))
 
-print("isSquare(1, 5) =", is_square(1, 5))
-print("isSquare(5, 5) =", is_square(5, 5))
+print("is_square(1, 5) =", is_square(1, 5))
+print("is_square(5, 5) =", is_square(5, 5))
 ```
 
 </div>
@@ -127,8 +127,8 @@ You can specify argument names explicitly - and even change their order.
 ```py
 # ./python/m08_rectangle_functions.py#L17-L18
 
-rectangle_area(a=2, b=5)
-rectangle_area(b=5, a=2)
+area(a=2, b=5)
+area(b=5, a=2)
 ```
 
 You can specify default values for arguments.

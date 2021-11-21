@@ -1,5 +1,5 @@
 class RectangleFunctions {
-    static double rectangleArea(double a, double b) {
+    static double area(double a, double b) {
         return a * b;
     }
 
@@ -8,8 +8,8 @@ class RectangleFunctions {
     }
 
     public static void main(String[] args) {
-        System.out.println("rectangleArea(1, 5) = " + rectangleArea(1, 5));
-        System.out.println("rectangleArea(1.5, 2.3) = " + rectangleArea(1.5, 2.3));
+        System.out.println("area(1, 5) = " + area(1, 5));
+        System.out.println("area(1.5, 2.3) = " + area(1.5, 2.3));
 
         System.out.println("isSquare(1, 5) = " + isSquare(1, 5));
         System.out.println("isSquare(5, 5) = " + isSquare(5, 5));

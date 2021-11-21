@@ -92,7 +92,7 @@ print("The digit sum is ", digit_sum)
 
 ### What do we notice here?
 
-- Reading from user input is easier in Python with `input()`
+- Reading from user input is done with `input()` and can also output a prompt
 - The `while` loop also exists in Python
 - We use an explicit integer division `//` in Python, but use a normal division `/` in Java
 
