@@ -1,2 +1,10 @@
-*.html linguist-generated
+# let linguist detect all the markdown files in here
+*.md linguist-detectable=true
+README.md linguist-detectable=false
+CONTRIBUTING.md linguist-detectable=false
+
+# 3rd-party stylesheet
+slides/excerpt.css linguist-vendored=true
+
+# shell scripts need LF line endings
 *.sh text eol=lf
