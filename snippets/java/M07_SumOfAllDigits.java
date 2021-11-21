@@ -16,6 +16,5 @@ class SumOfAllDigits {
         }
 
         System.out.println("The digit sum is " + digitSum);
-
     }
 }

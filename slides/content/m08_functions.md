@@ -53,6 +53,73 @@ print("isSquare(5, 5) =", is_square(5, 5))
 
 ---
 
+## Pass by "Object Reference" / "Assignment"
+
+In a nutshell, Python has the same passing behavior as Java - although, Python lacks [**primitive types**](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html).
+
+<div class="sidebyside">
+
+```java [|3-9|14-15|17-18|]
+// ./java/M08_PassByObjectReference.java#L4-L20
+
+static void replace(List<Integer> numbers) {
+    numbers = Arrays.asList(42, 43, 44);
+}
+
+static void append(List<Integer> numbers) {
+    numbers.add(42);
+}
+
+public static void main(String[] args) {
+    List<Integer> oneTwoThree = new LinkedList<>(Arrays.asList(1, 2, 3));
+
+    replace(oneTwoThree);
+    System.out.println(Arrays.toString(oneTwoThree.toArray()));
+
+    append(oneTwoThree);
+    System.out.println(Arrays.toString(oneTwoThree.toArray()));
+}
+```
+
+```py [|3-8|13-16|18-21|]
+# ./python/m08_pass_by_object_reference.py
+
+def replace(numbers):
+    numbers = [42, 43, 44]
+
+
+def append(numbers):
+    numbers.append(42)
+
+
+one_two_three = [1, 2, 3]
+
+replace(one_two_three)
+print(one_two_three)
+
+# > [1, 2, 3]
+
+append(one_two_three)
+print(one_two_three)
+
+# > [1, 2, 3, 42]
+
+```
+
+</div>
+
+**Arguments are ALWAYS passed by-value**, in Java and also in Python.  
+When your argument is an object, the reference to that object is passed.
+
+- In Java, when you pass a primitive type like `int`, the value is copied.
+- Python has NO primitives. If you pass an `int`, the object reference is passed and NO data is copied.  
+  But, since `int` is [**immutable**](https://docs.python.org/3/reference/datamodel.html), you can't change the value of the original object either. *
+
+<small>* From here on, things get complicated. Learn more about the technical details by [Robert Heaton. 2014. "Is Python pass-by-reference or pass-by-value?"](https://robertheaton.com/2014/02/09/pythons-pass-by-object-reference-as-explained-by-philip-k-dick/) <br/> and [Sreejith Kesavan. 2012. "Understanding Python Variables and Memory Management"](http://foobarnbaz.com/2012/07/08/understanding-python-variables/).
+</small>
+
+---
+
 ## What else is different with Python functions? 1/3
 
 You can specify argument names explicitly - and even change their order.
