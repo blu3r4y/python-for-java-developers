@@ -8,13 +8,26 @@
 
 If you are a Java developer and want to get a quick glance at Python, this course is for you.
 
-**Click the Binder button to start an interactive environment.** Or just view the slides or the excerpt.
-
 ## Course Guide
 
-### Start an interactive notebook
+You can follow along by just viewing the slides or the excerpt.  
+If you would like to have PDF slides, press the PDF button and head to your print dialog.
 
-If you want to play around with Python locally, you may start a stand-alone notebook.
+If you want to play around with the code snippets in a Jupyter notebook, do one of the following.
+
+### 1. Open a JupyerLab environment with Binder (recommended)
+
+**Click the Binder button** above to launch a pre-configured JupyterLab instance in your browser.
+
+### 2. Install and run Python on your computer (local setup)
+
+[Install Python](https://www.python.org/) locally, check-out this repository, install the dependencies and start a JupyterLab instance.
 
     python -m pip install -r requirements.txt
     python -m jupyter lab --notebook-dir .
+
+If you have [VS Code](https://code.visualstudio.com/), you can also open notebooks directly in there.
+
+### 3. Use GitHub.dev with Pyodide (experimental)
+
+**Press the `.` button on your keyboard** and install the `vscode-pyodide` extension for Jupyter support.
