@@ -254,6 +254,6 @@ for shape in shapes:
 - Use abstract classes via the [**`abc` module**](https://docs.python.org/3/library/abc.html)
 - Learn more about formal interfaces at [realpython.com/python-interface](https://realpython.com/python-interface/)
 
-<small>* Look into [**type hints**](https://docs.python.org/3/library/typing.html) to have better type-checking at runtime and even before you run your code.</small>
-
 </div>
+
+<small>* Look into [**type hints**](https://docs.python.org/3/library/typing.html) to have better type-checking at runtime and even before you run your code.</small>

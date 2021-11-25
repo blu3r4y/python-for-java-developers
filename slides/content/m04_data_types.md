@@ -129,7 +129,7 @@ print("sin(pi / 2) =", math.sin(math.pi / 2))
 
 ## Text Types
 
-Strings in Python are immutable* just like in Java.
+Strings in Python are [**immutable**](https://docs.python.org/3/glossary.html#term-immutable)* - just like in Java.
 When you modify strings, new memory is allocated.
 
 ```py

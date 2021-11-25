@@ -78,7 +78,7 @@ pair[0]               # get element by index, similar to lists
 
 <div class="fragment">
 
-💡 **Tuples are always immutable!**
+💡 **Tuples are always [immutable](https://docs.python.org/3/glossary.html#term-immutable)!**
 
 You can NOT modify, append, or delete anything from them after you created one.
 
