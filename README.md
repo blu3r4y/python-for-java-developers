@@ -8,9 +8,9 @@
 
 If you are a Java developer and want to get a quick glance at Python, this course is for you.
 
-| Course [Excerpt](https://blu3r4y.github.io/python-for-java-developers/excerpt.html)  | Course [Slides](https://blu3r4y.github.io/python-for-java-developers/) |
-| ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------- |
-| ![Excerpt Screenshot](./.github/images/excerpt.png)                                  | ![Slides Screenshot](./.github/images/slides.png)                      |
+| Course [excerpt](https://blu3r4y.github.io/python-for-java-developers/excerpt.html)                                        | Course [slides](https://blu3r4y.github.io/python-for-java-developers/) or [PDF view](https://blu3r4y.github.io/python-for-java-developers/?print-pdf) |
+| -------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![Excerpt Screenshot](./.github/images/excerpt.png)](https://blu3r4y.github.io/python-for-java-developers/excerpt.html)   | [![Slides Screenshot](./.github/images/slides.png)](https://blu3r4y.github.io/python-for-java-developers/)                                            |
 
 ## Interactive Course Guide
 
@@ -23,7 +23,7 @@ If you want to play around with the code snippets in a Jupyter notebook, do one 
 
 **Click the Binder button** above to launch a pre-configured JupyterLab instance in your browser.
 
-![Binder Screenshot](./.github/images/binder.png)
+[![Binder Screenshot](./.github/images/binder.png)](https://mybinder.org/v2/gh/blu3r4y/python-for-java-developers/main?labpath=snippets%2Fpython%2Fm02_jupyter_introduction.ipynb)
 
 ### Option B: Install and run Python on your computer (local setup)
 
