@@ -1,6 +1,6 @@
 {
   "name": "python-for-java-developers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "If you are a Java developer and want to get a quick glance at Python, this course is for you",
   "scripts": {
     "dev": "vite --open",
@@ -26,10 +26,10 @@
   "homepage": "https://github.com/blu3r4y/python-for-java-developers#readme",
   "devDependencies": {
     "embedme": "github:blu3r4y/embedme#fix-language-extension-parser_dist",
-    "vite": "^2.6.14"
+    "vite": "^3.2.3"
   },
   "dependencies": {
-    "highlight.js": "^11.3.1",
-    "reveal.js": "^4.2.0"
+    "highlight.js": "^11.6.0",
+    "reveal.js": "^4.4.0"
   }
 }

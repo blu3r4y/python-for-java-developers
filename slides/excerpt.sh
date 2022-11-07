@@ -1,6 +1,6 @@
 #!/bin/sh
 pandoc \
-  --from gfm --to html5 --self-contained \
+  --from gfm --to html5 --embed-resources --standalone \
   --metadata pagetitle="Python for Java Developers" \
   --output ./dist/excerpt.html --css ./excerpt.css \
   --resource-path=.:./content \
