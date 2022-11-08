@@ -5,7 +5,7 @@
 📧 [mario.kahlhofer@dynatrace.com](mailto:mario.kahlhofer@dynatrace.com)  
 🌎 [github.com/blu3r4y/python-for-java-developers](https://github.com/blu3r4y/python-for-java-developers)
 
-![](images/python-xkcd.png) <!-- .element style="height: 20em;" -->
+![xkcd Comic](images/python-xkcd.png) <!-- .element style="height: 20em;" -->
 
 <small>(c) [https://xkcd.com/353](https://xkcd.com/353)</small>
 

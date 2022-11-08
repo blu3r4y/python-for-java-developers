@@ -8,9 +8,9 @@
 
 If you are a Java developer and want to get a quick glance at Python, this course is for you.
 
-| Course [excerpt](https://blu3r4y.github.io/python-for-java-developers/excerpt.html)                                        | Course [slides](https://blu3r4y.github.io/python-for-java-developers/) or [PDF view](https://blu3r4y.github.io/python-for-java-developers/?print-pdf) |
-| -------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Excerpt Screenshot](./.github/images/excerpt.png)](https://blu3r4y.github.io/python-for-java-developers/excerpt.html)   | [![Slides Screenshot](./.github/images/slides.png)](https://blu3r4y.github.io/python-for-java-developers/)                                            |
+| Course [excerpt](https://blu3r4y.github.io/python-for-java-developers/excerpt.html)                                      | Course [slides](https://blu3r4y.github.io/python-for-java-developers/) or [PDF view](https://blu3r4y.github.io/python-for-java-developers/?print-pdf) |
+| ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [![Excerpt Screenshot](./.github/images/excerpt.png)](https://blu3r4y.github.io/python-for-java-developers/excerpt.html) | [![Slides Screenshot](./.github/images/slides.png)](https://blu3r4y.github.io/python-for-java-developers/)                                            |
 
 ## Interactive Course Guide
 

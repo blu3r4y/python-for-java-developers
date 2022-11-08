@@ -3,7 +3,7 @@
 # 🐍 What is Python?
 <!-- .element: class="headline" -->
 
-![](images/python-logo.png) <!-- .element style="height: 5em; margin-bottom: -1em;" -->
+![Python Logo](images/python-logo.png) <!-- .element style="height: 5em; margin-bottom: -1em;" -->
 
 Python is a **mature, general-purpose, object-oriented, dynamically-typed** programming language.
 
@@ -12,7 +12,7 @@ Python is a **mature, general-purpose, object-oriented, dynamically-typed** prog
 - popular alternative to MATLAB or Octave
 - gaining in popularity year after year
 
- ![](images/python-popularity.png) <!-- .element style="height: 15em;" -->
+ ![Python Popularity](images/python-popularity.png) <!-- .element style="height: 15em;" -->
 
 ---
 

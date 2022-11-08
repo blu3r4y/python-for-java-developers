@@ -1,0 +1,5 @@
+MD001: false # heading-increment
+MD013: false # line-length
+MD024: false # no-duplicate-heading
+MD033: false # no-inline-html
+MD051: false # link-fragments

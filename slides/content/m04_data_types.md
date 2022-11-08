@@ -9,7 +9,7 @@ Find all "built-in types" at [docs.python.org/3/library/stdtypes.html](https://d
 - Numeric Types
 - Text Types
 - Boolean Types
- 
+
 💡 **In Python, you do not specify types explicitly!**
 Although, you can have [**type hints**](https://docs.python.org/3/library/typing.html).
 
@@ -17,7 +17,7 @@ Although, you can have [**type hints**](https://docs.python.org/3/library/typing
 
 <div class="fragment">
 
-### Python is dynamically-typed 
+### Python is dynamically-typed
 
 Unlike Java, you can re-assign values of different types to the same variable as you wish. **
 
