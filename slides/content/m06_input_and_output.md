@@ -1,6 +1,7 @@
 <!-- .slide: id="-input-and-output" -->
 
 # 🐍 Input and Output
+
 <!-- .element: class="headline" -->
 
 ## Input
@@ -122,9 +123,9 @@ with open(filename, "r") as f:
 
 ### What do we notice here?
 
-- The default file mode is `r` for reading - use `w` for writing, `w+` for reading and writing *
+- The default file mode is `r` for reading - use `w` for writing, `w+` for reading and writing \*
 - The default encoding is `ascii`, use the `encoding="utf-8"` [**keyword argument**](https://docs.python.org/3/glossary.html#term-argument) otherwise
 
-<small>* Read about possible modes at [gto76.github.io/python-cheatsheet/#open](https://gto76.github.io/python-cheatsheet/#open).</small>
+<small>\* Read about possible modes at [gto76.github.io/python-cheatsheet/#open](https://gto76.github.io/python-cheatsheet/#open).</small>
 
 </div>

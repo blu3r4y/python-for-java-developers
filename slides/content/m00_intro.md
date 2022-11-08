@@ -1,4 +1,5 @@
 # 🐍 Python for Java Developers
+
 <!-- .element: class="headline" -->
 
 🧑 Mario Kahlhofer  
@@ -38,7 +39,7 @@
 
 - 📚 Sarda, Deepak. **Python for the Busy Java Developer.** Apress, 2017.  
   DOI: [10.1007/978-1-4842-3234-7](https://doi.org/10.1007/978-1-4842-3234-7)
-  *(sadly, uses the deprecated Python 2 syntax)*
+  _(sadly, uses the deprecated Python 2 syntax)_
 - 🌍 **Real Python Tutorials.** [realpython.com](https://realpython.com/)
 
 ### Official Documentation

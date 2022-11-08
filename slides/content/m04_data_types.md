@@ -1,9 +1,10 @@
 <!-- .slide: id="-data-types" -->
 
 # 🐍 Data Types
+
 <!-- .element: class="headline" -->
 
-We will only look into a few non-container data types of Python, which Java would call [**primitive types**](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html). *  
+We will only look into a few non-container data types of Python, which Java would call [**primitive types**](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html). \*  
 Find all "built-in types" at [docs.python.org/3/library/stdtypes.html](https://docs.python.org/3/library/stdtypes.html)
 
 - Numeric Types
@@ -13,13 +14,13 @@ Find all "built-in types" at [docs.python.org/3/library/stdtypes.html](https://d
 💡 **In Python, you do not specify types explicitly!**
 Although, you can have [**type hints**](https://docs.python.org/3/library/typing.html).
 
-<small>* You can think of a variable in Python as a "tag" or "name" that is attached to some object, and NOT as the "container" that holds some value. All types in Python are essentially objects, even the numeric, text, and boolean ones. However, don't wrap your head around this too much - as you will see, things turn out to behave quite similar to Java.</small>
+<small>\* You can think of a variable in Python as a "tag" or "name" that is attached to some object, and NOT as the "container" that holds some value. All types in Python are essentially objects, even the numeric, text, and boolean ones. However, don't wrap your head around this too much - as you will see, things turn out to behave quite similar to Java.</small>
 
 <div class="fragment">
 
 ### Python is dynamically-typed
 
-Unlike Java, you can re-assign values of different types to the same variable as you wish. **
+Unlike Java, you can re-assign values of different types to the same variable as you wish. \*\*
 
 ```py
 x = 1416787301
@@ -27,7 +28,7 @@ x = "is"
 x = True
 ```
 
-<small>** Speaking in the notion of "tags" and "names", this means that you can freely re-assign the "tag" or "name" to point to a different location.</small>
+<small>\*\* Speaking in the notion of "tags" and "names", this means that you can freely re-assign the "tag" or "name" to point to a different location.</small>
 
 </div>
 
@@ -37,7 +38,7 @@ x = True
 
 There are only exist the three numeric types `float` / `int` / `complex` in Python.
 
-- `float` types in Python ➡ are equal to `double` types in Java *
+- `float` types in Python ➡ are equal to `double` types in Java \*
 - There are NO `short` / `int` / `long` / "`float`" / `double` types in Python
 
 ```py
@@ -52,7 +53,7 @@ ascii_symbol = 0x3f
 input_bitmask = 0b1011_1001
 ```
 
-<small>* "Floating point numbers are usually implemented using `double` in C; information about the precision and internal representation of floating point numbers for the machine on which your program is running is available in `sys.float_info`" - see [docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex)</small>
+<small>\* "Floating point numbers are usually implemented using `double` in C; information about the precision and internal representation of floating point numbers for the machine on which your program is running is available in `sys.float_info`" - see [docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex)</small>
 
 ---
 
@@ -129,7 +130,7 @@ print("sin(pi / 2) =", math.sin(math.pi / 2))
 
 ## Text Types
 
-Strings in Python are [**immutable**](https://docs.python.org/3/glossary.html#term-immutable)* - just like in Java.
+Strings in Python are [**immutable**](https://docs.python.org/3/glossary.html#term-immutable)\* - just like in Java.
 When you modify strings, new memory is allocated.
 
 ```py
@@ -141,14 +142,14 @@ hold line breaks
 now"""
 ```
 
-<small>* Immutable, i.e., unchangeable, objects can not be modified after their creation.</small>  
+<small>\* Immutable, i.e., unchangeable, objects can not be modified after their creation.</small>
 
 <div class="fragment">
 
 ### String Conversion
 
 Many types in Python can be converted to a string with `str()` - similar to `.toString()` in Java.  
-As seen in the example, if you concatenate a string with a non-string, you even have to. **
+As seen in the example, if you concatenate a string with a non-string, you even have to. \*\*
 
 <div class="sidebyside">
 
@@ -181,7 +182,7 @@ print("The number is", num)
 
 ### String Concatenation
 
-Use `str.join()` in Python to concatenate a large number of strings. *
+Use `str.join()` in Python to concatenate a large number of strings. \*
 
 <div class="sidebyside">
 
@@ -210,7 +211,7 @@ result = " ".join([a, b, c, d])
 
 </div>
 
-<small>* The equivalent of a [`StringBuilder`](https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html) in Java would be [`io.StringIO`](https://docs.python.org/3.9/library/io.html#io.StringIO) in Python.</small>
+<small>\* The equivalent of a [`StringBuilder`](https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html) in Java would be [`io.StringIO`](https://docs.python.org/3.9/library/io.html#io.StringIO) in Python.</small>
 
 ---
 

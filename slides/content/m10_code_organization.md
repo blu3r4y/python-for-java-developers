@@ -1,6 +1,7 @@
 <!-- .slide: id="-code-organization" -->
 
 # 🐍 Code Organization
+
 <!-- .element: class="headline" -->
 
 Let's take a quick interactive look at how one would create a Python project consisting of multiple files.
@@ -8,11 +9,13 @@ Let's take a quick interactive look at how one would create a Python project con
 ### Running Python Scripts
 
 📜 `./python/m10_multiple_scripts`
+
 <!-- .element: class="snippet" -->
 
 ### Packages and Modules
 
 📜 `./python/m10_demo_project`
+
 <!-- .element: class="snippet" -->
 
 Learn about more **best practices** at [docs.python-guide.org/writing/structure](https://docs.python-guide.org/writing/structure/)
@@ -69,8 +72,8 @@ You should structure your code into [**packages**](https://docs.python.org/3/glo
 .
 ├── README.md          <-- brief description
 ├── requirements.txt   <-- list of dependencies (list package names and versions)
-├── graphics           
-│   ├── __init__.py    
+├── graphics
+│   ├── __init__.py
 │   └── parabola.py
 └── user               <-- a package named 'user'
     ├── __init__.py    <-- will be executed when you 'import user'
@@ -79,7 +82,7 @@ You should structure your code into [**packages**](https://docs.python.org/3/glo
 
 <div class="fragment" data-fragment-index="1">
 
-Dependencies are usually listed in a `requirements.txt` file and are installed with `pip`. *
+Dependencies are usually listed in a `requirements.txt` file and are installed with `pip`. \*
 
 ```sh
 python -m pip install -r requirements.txt
@@ -103,6 +106,6 @@ Thus, on each `import` statement you write, packages and modules will be found a
 
 <div class="fragment" data-fragment-index="1">
 
-<small>* Note that `pip` is a package by itself and that we use the module mode to run it. Many modules are also added to your system path upon installation, which allows you to run them directly from the command line, e.g. with `pip` instead of `python -m pip`.</small>
+<small>\* Note that `pip` is a package by itself and that we use the module mode to run it. Many modules are also added to your system path upon installation, which allows you to run them directly from the command line, e.g. with `pip` instead of `python -m pip`.</small>
 
 </div>

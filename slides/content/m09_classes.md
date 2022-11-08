@@ -1,6 +1,7 @@
 <!-- .slide: id="-classes" -->
 
 # 🐍 Classes
+
 <!-- .element: class="headline" -->
 
 Python is object-oriented, but follows a more lean approach towards classes.
@@ -220,7 +221,7 @@ for shape in shapes:
 ## Duck-Typing
 
 Since there is NO type-checking at compile-time, we may also solely rely on [**duck-typing**](https://docs.python.org/3/glossary.html#term-duck-typing).  
-An `AttributeError` is thrown at runtime, if the method you are calling wouldn't exist. *
+An `AttributeError` is thrown at runtime, if the method you are calling wouldn't exist. \*
 
 ```py [|3-16|19-21|21|]
 # ./python/m09_shapes_duck_typing.py
@@ -256,4 +257,4 @@ for shape in shapes:
 
 </div>
 
-<small>* Look into [**type hints**](https://docs.python.org/3/library/typing.html) to have better type-checking at runtime and even before you run your code.</small>
+<small>\* Look into [**type hints**](https://docs.python.org/3/library/typing.html) to have better type-checking at runtime and even before you run your code.</small>

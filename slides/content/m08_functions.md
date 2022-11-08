@@ -1,6 +1,7 @@
 <!-- .slide: id="-functions" -->
 
 # 🐍 Functions
+
 <!-- .element: class="headline" -->
 
 <div class="sidebyside">
@@ -115,9 +116,9 @@ When your argument is an object, the reference to that object is passed.
 
 - In Java, when you pass a primitive type like `int`, the value is copied.
 - Python has NO primitives. If you pass an `int`, the object reference is passed and NO data is copied.  
-  But, since `int` is [**immutable**](https://docs.python.org/3/reference/datamodel.html), you can't change the value of the original object either. *
+  But, since `int` is [**immutable**](https://docs.python.org/3/reference/datamodel.html), you can't change the value of the original object either. \*
 
-<small>* From here on, things get complicated. Learn more about the technical details by [Robert Heaton. 2014. "Is Python pass-by-reference or pass-by-value?"](https://robertheaton.com/2014/02/09/pythons-pass-by-object-reference-as-explained-by-philip-k-dick/) <br/> and [Sreejith Kesavan. 2012. "Understanding Python Variables and Memory Management"](http://foobarnbaz.com/2012/07/08/understanding-python-variables/).
+<small>\* From here on, things get complicated. Learn more about the technical details by [Robert Heaton. 2014. "Is Python pass-by-reference or pass-by-value?"](https://robertheaton.com/2014/02/09/pythons-pass-by-object-reference-as-explained-by-philip-k-dick/) <br/> and [Sreejith Kesavan. 2012. "Understanding Python Variables and Memory Management"](http://foobarnbaz.com/2012/07/08/understanding-python-variables/).
 </small>
 
 </div>
@@ -196,7 +197,6 @@ print("area", a)
 - You can declare anonymous functions, called [**lambda expressions**](https://docs.python.org/3/reference/expressions.html#lambda)
 - You can overwrite and change functions on-the-fly, just like variables  
   _("functions are first-class-citizens in Python")_
-- You can use [**`*args` and `**kwargs`**](https://docs.python.org/3/glossary.html#term-parameter) to work with almost arbitrary input parameters,  
-  which you already did use in the `print()` function for example
+- You can use **[`*args` and `**kwargs`](https://docs.python.org/3/glossary.html#term-parameter)** to work with almost arbitrary input parameters, which you already did use in the `print()` function for example
 
 Learn more about funtions at [docs.python.org/3/tutorial/controlflow.html#more-on-defining-functions](https://docs.python.org/3/tutorial/controlflow.html#more-on-defining-functions).

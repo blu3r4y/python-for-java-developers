@@ -1,9 +1,10 @@
 <!-- .slide: id="-installation" -->
 
 # 🐍 Installation
+
 <!-- .element: class="headline" -->
 
-Go to [python.org](https://www.python.org/) and install the 64-bit version of Python 3.8 or newer.  
+Go to [python.org](https://www.python.org/) and install the 64-bit version of Python 3.8 or newer.
 
 🚫 **Do NOT use Python 2.7 or older anymore!**
 
@@ -19,7 +20,7 @@ The most popular IDEs are [IntelliJ PyCharm](https://www.jetbrains.com/pycharm/)
 ### What is Anaconda?
 
 If you intend to use lots of scientific packages, you can install [Anaconda](https://www.anaconda.com/products/individual) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html) as an alternative.
-`numpy` / `scipy` /  `sympy` /  `tensorflow` / ... usually work out of the box with Anaconda, especially on Windows.
+`numpy` / `scipy` / `sympy` / `tensorflow` / ... usually work out of the box with Anaconda, especially on Windows.
 
 - `conda` is the package manager used by Anaconda, pulling packages from [anaconda.org](https://anaconda.org/anaconda/repo)
 
@@ -49,7 +50,7 @@ python -m pip install jupyter jupyterlab
 
 ### Usage
 
-You may want to open `*.ipynb`  notebook files directly within [VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks) or [PyCharm](https://www.jetbrains.com/help/pycharm/jupyter-notebook-support.html).
+You may want to open `*.ipynb` notebook files directly within [VS Code](https://code.visualstudio.com/docs/datascience/jupyter-notebooks) or [PyCharm](https://www.jetbrains.com/help/pycharm/jupyter-notebook-support.html).
 Alternatively, you can start a stand-alone instance in the browser from the command line.
 
 ```sh
@@ -63,6 +64,7 @@ python -m jupyter lab [--notebook-dir <path>]
 ### Try it now
 
 📜 `./python/m02_jupyter_introduction.ipynb`
+
 <!-- .element: class="snippet" -->
 
 </div>

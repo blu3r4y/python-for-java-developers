@@ -1,6 +1,7 @@
 <!-- .slide: id="-syntax-primer" -->
 
 # 🐍 Syntax Primer
+
 <!-- .element: class="headline" -->
 
 <div class="sidebyside">

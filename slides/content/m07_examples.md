@@ -1,6 +1,7 @@
 <!-- .slide: id="-examples" -->
 
 # 🐍 Examples
+
 <!-- .element: class="headline" -->
 
 ## Basic Control Flow
@@ -110,7 +111,7 @@ assert 5 / 2 == 2.5
 assert 5 // 2 == 2
 ```
 
-<small>* `assert` will raise an `AssertionError` if the condition is `False` - use it to check assumptions in your code.</small>
+<small>\* `assert` will raise an `AssertionError` if the condition is `False` - use it to check assumptions in your code.</small>
 
 </div>
 
@@ -206,6 +207,7 @@ list(range(5, 8))
 ---
 
 ## 🐍 Advanced Operations on Sequences
+
 <!-- .element: class="headline" -->
 
 ## Sequence Slicing 1/2
@@ -242,6 +244,7 @@ The following variants are supported:
 ## Sequence Slicing 2/2: Examples
 
 <!-- embedme ./python/m07_sequence_slicing.py#L1-L1 -->
+
 ```py
 numbers = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
 ```
@@ -402,7 +405,7 @@ print(gross)
 
 ### 💡 List Comprehension
 
-List comprehensions map each value in a list to a new value and thus create a new list. *
+List comprehensions map each value in a list to a new value and thus create a new list. \*
 
 `[x for x in sequence]`
 
@@ -413,6 +416,6 @@ prices = [12.3, 5.2, 8.7, 1.2, 8.0]
 gross = [price * 1.2 for price in prices if price > 8]
 ```
 
-<small>* Python offers a lot of features for functional programming, like [`map`](https://docs.python.org/3/library/functions.html#map) / [`filter`](https://docs.python.org/3/library/functions.html#filter) / [`reduce`](https://docs.python.org/3/library/functools.html#functools.reduce) / [`zip`](https://docs.python.org/3/library/functions.html#zip) / [`all`](https://docs.python.org/3/library/functions.html#all) / [`any`](https://docs.python.org/3/library/functions.html#any) / ...</small>
+<small>\* Python offers a lot of features for functional programming, like [`map`](https://docs.python.org/3/library/functions.html#map) / [`filter`](https://docs.python.org/3/library/functions.html#filter) / [`reduce`](https://docs.python.org/3/library/functools.html#functools.reduce) / [`zip`](https://docs.python.org/3/library/functions.html#zip) / [`all`](https://docs.python.org/3/library/functions.html#all) / [`any`](https://docs.python.org/3/library/functions.html#any) / ...</small>
 
 </div>

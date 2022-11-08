@@ -1,6 +1,7 @@
 <!-- .slide: id="-collections" -->
 
 # 🐍 Collections
+
 <!-- .element: class="headline" -->
 
 We will only look into a few collection types of Python.  
