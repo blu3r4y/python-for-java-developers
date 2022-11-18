@@ -16,6 +16,7 @@ Find them all at [docs.python.org/3/library/stdtypes.html](https://docs.python.o
 ## Lists 1/2
 
 Lists hold multiple elements in a specific order.
+Unlike arrays, they can change in size at any time.
 
 ```py [|3-5|8-9|11|13-14|16-17|]
 # ./python/m05_list_operations.py#L1-L15

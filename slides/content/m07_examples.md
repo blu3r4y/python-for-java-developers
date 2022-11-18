@@ -50,7 +50,9 @@ else:
 
 ### What do we notice here?
 
-- Python has no `switch` expression, you have to make a cascade of `if` / `elif` / `else` statements
+- Python has no `switch` expression, you have to make a cascade of `if` / `elif` / `else` statements \*
+
+<small>\* Actually, if you are using **Python 3.10** or newer, there are the new `match` and `case` statements now.</small>
 
 </div>
 
