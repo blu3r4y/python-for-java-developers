@@ -2,6 +2,8 @@ name: deploy-github-pages
 
 on:
   push:
+    branches:
+      - main
 
 jobs:
   build-slides:
