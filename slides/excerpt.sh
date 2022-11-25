@@ -1,4 +1,5 @@
 #!/bin/sh
+mkdir -p dist
 pandoc \
   --from gfm --to html5 --embed-resources --standalone \
   --metadata pagetitle="Python for Java Developers" \
