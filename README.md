@@ -33,7 +33,3 @@ If you want to play around with the code snippets in a Jupyter notebook, do one 
     python -m jupyter lab --notebook-dir .
 
 If you have [VS Code](https://code.visualstudio.com/), you can also open notebooks directly in there.
-
-### Option C: Use GitHub.dev with Pyodide (experimental)
-
-**Press the `.` button on your keyboard** and install the `vscode-pyodide` extension for Jupyter support.
