@@ -1,12 +1,10 @@
-import java.util.*;
+import inout.In;
+import inout.Out;
 
 class SumOfAllDigits {
     public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int n = scanner.nextInt();
-        scanner.close();
+        Out.print("Enter a number: ");
+        int n = In.readInt();
 
         int digitSum = 0;
 
@@ -15,6 +13,6 @@ class SumOfAllDigits {
             n = n / 10;
         }
 
-        System.out.println("The digit sum is " + digitSum);
+        Out.println("The digit sum is " + digitSum);
     }
 }

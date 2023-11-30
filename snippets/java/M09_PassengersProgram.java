@@ -1,4 +1,5 @@
-import java.util.*;
+import inout.In;
+import inout.Out;
 
 class Passenger {
 
@@ -11,28 +12,24 @@ class Passenger {
     }
 
     void display() {
-        System.out.printf("%s %s %n", firstName, lastName);
-    }
-
-    static Passenger fromInput() {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter first name: ");
-        String firstName = scanner.nextLine();
-        System.out.print("Enter last name: ");
-        String lastName = scanner.nextLine();
-
-        scanner.close();
-
-        return new Passenger(firstName, lastName);
+        Out.println(firstName + " " + lastName);
     }
 }
 
 class PassengersProgram {
 
+    static Passenger createPassengerFromInput() {
+        Out.print("Enter first name: ");
+        String firstName = In.readLine();
+        Out.print("Enter last name: ");
+        String lastName = In.readLine();
+
+        return new Passenger(firstName, lastName);
+    }
+
     public static void main(String[] args) {
         Passenger lisa = new Passenger("Lisa", "Ha");
-        Passenger user = Passenger.fromInput();
+        Passenger user = createPassengerFromInput();
 
         lisa.display();
         user.display();

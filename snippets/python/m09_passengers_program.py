@@ -4,19 +4,19 @@ class Passenger:
         self.last_name = last_name
 
     def display(self):
-        print(f"Passenger: {self.first_name} {self.last_name}")
+        print(self.first_name + " " + self.last_name)
 
-    @staticmethod
-    def from_input():
-        first_name = input("Enter first name: ")
-        last_name = input("Enter last name: ")
 
-        return Passenger(first_name, last_name)
+def create_passenger_from_input():
+    first_name = input("Enter first name: ")
+    last_name = input("Enter last name: ")
+
+    return Passenger(first_name, last_name)
 
 
 if __name__ == "__main__":
     lisa = Passenger("Lisa", "Ha")
-    user = Passenger.from_input()
+    user = create_passenger_from_input()
 
     lisa.display()
     user.display()
