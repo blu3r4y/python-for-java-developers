@@ -29,6 +29,17 @@
 - [Libraries](#-libraries)
 - [Zen of Python](#-zen-of-python)
 
+<div class="fragment">
+
+### 🏫 Today: JKU Agenda
+
+The online resources have a little bit more content than today's session:
+
+- More on Collections: Dictionaries and Sets
+- String Concatenation & Function Passing Behavior
+
+</div>
+
 ---
 
 <!-- .slide: id="-literature" -->

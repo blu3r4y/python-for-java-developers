@@ -154,10 +154,10 @@ As seen in the example, if you concatenate a string with a non-string, you even 
 <div class="sidebyside">
 
 ```java
-// ./java/M04_StringConversion.java#L3-L4
+// ./java/M04_StringConversion.java#L5-L6
 
 int num = 42;
-System.out.println("The number is " + num);
+Out.println("The number is " + num);
 ```
 
 ```py
@@ -177,41 +177,6 @@ print("The number is", num)
 </div>
 
 </div>
-
----
-
-### String Concatenation
-
-Use `str.join()` in Python to concatenate a large number of strings. \*
-
-<div class="sidebyside">
-
-```java
-// ./java/M04_StringConcatenation.java#L3-L8
-
-String a = "How";
-String b = "to";
-String c = "concatenate";
-String d = "strings";
-
-String result = String.join(" ", a, b, c, d);
-```
-
-```py
-# ./python/m04_string_concatenation.py#L1-L7
-
-a = "How"
-b = "to"
-c = "concatenate"
-d = "strings"
-
-# we learn more about lists in the next modules ...
-result = " ".join([a, b, c, d])
-```
-
-</div>
-
-<small>\* The equivalent of a [`StringBuilder`](https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html) in Java would be [`io.StringIO`](https://docs.python.org/3.9/library/io.html#io.StringIO) in Python.</small>
 
 ---
 

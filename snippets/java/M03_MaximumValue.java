@@ -1,10 +1,10 @@
-import java.util.*;
+import inout.Out;
 
 class MaximumValue {
     public static void main(String[] args) {
-        List<Integer> numbers = Arrays.asList(1, -10, 0, -5, -1000, 100, 7);
+        int[] numbers = {1, -10, 0, -5, -1000, 100, 7};
 
-        int maximum = numbers.get(0);
+        int maximum = numbers[0];
 
         for (int number : numbers) {
             if (number > maximum) {
@@ -12,6 +12,6 @@ class MaximumValue {
             }
         }
 
-        System.out.println("The maximum value is " + maximum);
+        Out.println("The maximum value is " + maximum);
     }
 }

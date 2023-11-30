@@ -9,7 +9,7 @@ Python is object-oriented, but follows a more lean approach towards classes.
 <div class="sidebyside">
 
 ```java
-// ./java/M09_PassengersProgram.java#L3-L40
+// ./java/M09_PassengersProgram.java#L4-L37
 
 class Passenger {
 
@@ -22,18 +22,14 @@ class Passenger {
     }
 
     void display() {
-        System.out.printf("%s %s %n", firstName, lastName);
+        Out.println(firstName + " " + lastName);
     }
 
     static Passenger fromInput() {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter first name: ");
-        String firstName = scanner.nextLine();
-        System.out.print("Enter last name: ");
-        String lastName = scanner.nextLine();
-
-        scanner.close();
+        Out.print("Enter first name: ");
+        String firstName = In.readLine();
+        Out.print("Enter last name: ");
+        String lastName = In.readLine();
 
         return new Passenger(firstName, lastName);
     }
@@ -60,7 +56,7 @@ class Passenger:
         self.last_name = last_name
 
     def display(self):
-        print(f"Passenger: {self.first_name} {self.last_name}")
+        print(self.first_name + " " + self.last_name)
 
     @staticmethod
     def from_input():

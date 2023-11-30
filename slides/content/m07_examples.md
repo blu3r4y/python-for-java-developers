@@ -9,22 +9,22 @@
 <div class="sidebyside">
 
 ```java
-// ./java/M07_BasicControlFlow.java#L3-L17
+// ./java/M07_BasicControlFlow.java#L5-L19
 
 int x = 0;
 
 switch (x) {
     case 0:
-        System.out.println("The value is 0");
+        Out.println("The value is 0");
         break;
     case 1:
-        System.out.println("The value is 1");
+        Out.println("The value is 1");
         break;
     case 2:
-        System.out.println("The value is 2");
+        Out.println("The value is 2");
         break;
     default:
-        System.out.println("The value is something else");
+        Out.println("The value is something else");
 }
 ```
 
@@ -63,12 +63,10 @@ else:
 <div class="sidebyside">
 
 ```java
-// ./java/M07_SumOfAllDigits.java#L6-L18
+// ./java/M07_SumOfAllDigits.java#L6-L16
 
-Scanner scanner = new Scanner(System.in);
-System.out.print("Enter a number: ");
-int n = scanner.nextInt();
-scanner.close();
+Out.print("Enter a number: ");
+int n = In.readInt();
 
 int digitSum = 0;
 
@@ -77,7 +75,7 @@ while (n > 0) {
     n = n / 10;
 }
 
-System.out.println("The digit sum is " + digitSum);
+Out.println("The digit sum is " + digitSum);
 ```
 
 ```py
@@ -124,12 +122,12 @@ assert 5 // 2 == 2
 <div class="sidebyside">
 
 ```java
-// ./java/M07_IteratingElementsByValue.java#L3-L7
+// ./java/M07_IteratingElementsByValue.java#L5-L9
 
 String[] names = {"Lisa", "John", "Susan", "Alex"};
 
 for (String name : names) {
-    System.out.println(name);
+    Out.println(name);
 }
 ```
 
@@ -160,12 +158,12 @@ for name in names:
 <div class="sidebyside">
 
 ```java
-// ./java/M07_IteratingElementsByIndex.java#L3-L7
+// ./java/M07_IteratingElementsByIndex.java#L5-L9
 
 int[] numbers = {10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
 
 for (int i = 5; i < 8; i++) {
-    System.out.println(numbers[i]);
+    Out.println(numbers[i]);
 }
 ```
 
@@ -333,13 +331,13 @@ numbers.sort(reverse=True)
 <div class="sidebyside">
 
 ```java
-// ./java/M07_EnumeratingOverElements.java#L3-L9
+// ./java/M07_EnumeratingOverElements.java#L5-L11
 
 String[] names = {"Lisa", "John", "Susan", "Alex"};
 
 int i = 0;
 while (i < names.length) {
-    System.out.println(i + " " + names[i]);
+    Out.println(i + " " + names[i]);
     i++;
 }
 ```
@@ -371,19 +369,17 @@ for i, name in enumerate(names):
 <div class="sidebyside">
 
 ```java
-// ./java/M07_PriceTax.java#L5-L16
+// ./java/M07_PriceTax.java#L5-L14
 
-List<Double> prices = Arrays.asList(12.3, 5.2, 8.7, 1.2, 8.0);
-List<Double> gross = new ArrayList<Double>();
+double[] prices = {12.3, 5.2, 8.7, 1.2, 8.0};
+double[] gross = new double[5];
 
-for (double price : prices) {
-    if (price > 8) {
-        gross.add(price * 1.2);
-    }
+for (int i = 0; i < prices.length; i++) {
+    gross[i] = prices[i] * 1.2;
 }
 
 for (double price : gross) {
-    System.out.println(price);
+    Out.println(price);
 }
 ```
 
@@ -394,8 +390,7 @@ prices = [12.3, 5.2, 8.7, 1.2, 8.0]
 gross = []
 
 for price in prices:
-    if price > 8:
-        gross.append(price * 1.2)
+    gross.append(price * 1.2)
 
 print(gross)
 
@@ -414,8 +409,8 @@ List comprehensions map each value in a list to a new value and thus create a ne
 ```py
 # ./python/m07_price_tax.py#L11-L12
 
-prices = [12.3, 5.2, 8.7, 1.2, 8.0]
-gross = [price * 1.2 for price in prices if price > 8]
+gross = [price * 1.2 for price in prices]
+
 ```
 
 <small>\* Python offers a lot of features for functional programming, like [`map`](https://docs.python.org/3/library/functions.html#map) / [`filter`](https://docs.python.org/3/library/functions.html#filter) / [`reduce`](https://docs.python.org/3/library/functools.html#functools.reduce) / [`zip`](https://docs.python.org/3/library/functions.html#zip) / [`all`](https://docs.python.org/3/library/functions.html#all) / [`any`](https://docs.python.org/3/library/functions.html#any) / ...</small>

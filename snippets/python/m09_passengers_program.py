@@ -4,7 +4,7 @@ class Passenger:
         self.last_name = last_name
 
     def display(self):
-        print(f"Passenger: {self.first_name} {self.last_name}")
+        print(self.first_name + " " + self.last_name)
 
     @staticmethod
     def from_input():
