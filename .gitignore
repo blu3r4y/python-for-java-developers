@@ -4,6 +4,7 @@
 
 .vscode
 .idea
+*.iml
 
 #########
 ## Java
