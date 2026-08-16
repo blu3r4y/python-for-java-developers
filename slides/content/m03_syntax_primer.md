@@ -7,11 +7,11 @@
 <div class="sidebyside">
 
 ```java
-// ./java/M03_MaximumValue.java#L5-L15
+// ./java/M03_MaximumValue.java#L3-L13
 
-List<Integer> numbers = Arrays.asList(1, -10, 0, -5, -1000, 100, 7);
+int[] numbers = {1, -10, 0, -5, -1000, 100, 7};
 
-int maximum = numbers.get(0);
+int maximum = numbers[0];
 
 for (int number : numbers) {
     if (number > maximum) {
